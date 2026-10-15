@@ -300,6 +300,119 @@
    "data": {
     "values": [
      {
+      "lon": 147.2,
+      "lat": -42.8,
+      "lon2": 148.9,
+      "lat2": -43.3,
+      "align": "left",
+      "lab": "6.7"
+     },
+     {
+      "lon": 130.95,
+      "lat": -12.55,
+      "lon2": 128.6,
+      "lat2": -11.8,
+      "align": "right",
+      "lab": "4.6"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "stroke": "#6b7685",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "longitude2": {
+     "field": "lon2"
+    },
+    "latitude2": {
+     "field": "lat2"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "lon": 147.2,
+      "lat": -42.8,
+      "lon2": 148.9,
+      "lat2": -43.3,
+      "align": "left",
+      "lab": "6.7"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 3,
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#6b7685"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "lon": 130.95,
+      "lat": -12.55,
+      "lon2": 128.6,
+      "lat2": -11.8,
+      "align": "right",
+      "lab": "4.6"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "dx": -3,
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#6b7685"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
       "city": "Perth",
       "lon": 117.5,
       "lat": -31.9,

@@ -29,7 +29,10 @@
  },
  "title": {
   "text": "Melbourne trains by line and hour: how busy the hour is and how crowded the trains are (weekdays)",
-  "subtitle": "Blue shows a bigger share of the line's weekday travel, orange shows more crowded trains, and dark slate grey means both. Blank cells have too few sampled trips."
+  "subtitle": [
+   "Blue = a bigger share of the line's weekday travel. Orange = more crowded trains.",
+   "Dark slate grey = both. Blank cells have too few sampled trips."
+  ]
  },
  "hconcat": [
   {
