@@ -174,7 +174,7 @@
       ],
       "range": [
        "#1d4e89",
-       "#6aa6e8",
+       "#3d8be0",
        "#d9730d",
        "#8e5bc4",
        "#8a8f98"
@@ -182,17 +182,40 @@
      }
     },
     "strokeDash": {
-     "condition": {
-      "test": "datum.day == 'Public holiday'",
-      "value": [
-       5,
-       3
+     "field": "day",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Weekday",
+       "Weekday in school holidays",
+       "Saturday",
+       "Sunday",
+       "Public holiday"
+      ],
+      "range": [
+       [
+        1,
+        0
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        3
+       ]
       ]
-     },
-     "value": [
-      1,
-      0
-     ]
+     }
     },
     "tooltip": [
      {
