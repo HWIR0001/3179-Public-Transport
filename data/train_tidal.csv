@@ -1,0 +1,49 @@
+direction,hour,share_signed
+Away from the city,4,-0.01
+Away from the city,5,-0.15
+Away from the city,6,-0.71
+Away from the city,7,-2.24
+Away from the city,8,-4.11
+Away from the city,9,-1.77
+Away from the city,10,-1.2
+Away from the city,11,-1.33
+Away from the city,12,-1.55
+Away from the city,13,-2.19
+Away from the city,14,-2.77
+Away from the city,15,-4.87
+Away from the city,16,-6.69
+Away from the city,17,-8.59
+Away from the city,18,-4.2
+Away from the city,19,-1.75
+Away from the city,20,-1.17
+Away from the city,21,-1.05
+Away from the city,22,-1.05
+Away from the city,23,-0.61
+Away from the city,24,-0.12
+Away from the city,25,-0.02
+Away from the city,26,-0.01
+Away from the city,27,-0.0
+Towards the city,4,0.07
+Towards the city,5,0.67
+Towards the city,6,2.82
+Towards the city,7,9.03
+Towards the city,8,10.06
+Towards the city,9,3.9
+Towards the city,10,2.37
+Towards the city,11,2.18
+Towards the city,12,2.12
+Towards the city,13,1.83
+Towards the city,14,1.88
+Towards the city,15,2.99
+Towards the city,16,3.48
+Towards the city,17,4.0
+Towards the city,18,2.03
+Towards the city,19,0.89
+Towards the city,20,0.59
+Towards the city,21,0.43
+Towards the city,22,0.33
+Towards the city,23,0.13
+Towards the city,24,0.02
+Towards the city,25,0.0
+Towards the city,26,0.0
+Towards the city,27,0.0

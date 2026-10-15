@@ -1,0 +1,214 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Calendar heatmap of Adelaide Metrocard touch-ons per day (thousands); red outline = public holiday.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Adelaide: Metrocard touch-ons per day (thousands), April to June 2026 (at least)",
+ "data": {
+  "url": "data/adelaide_daily.csv"
+ },
+ "width": "container",
+ "height": 190,
+ "transform": [
+  {
+   "calculate": "datum.validations_min / 1000",
+   "as": "touch_k"
+  }
+ ],
+ "layer": [
+  {
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 1.5
+   },
+   "encoding": {
+    "x": {
+     "field": "week_start",
+     "type": "ordinal",
+     "title": "Week starting",
+     "axis": {
+      "labelAngle": 0,
+      "labelOverlap": true,
+      "labelExpr": "utcFormat(toDate(datum.value), '%-d %b')"
+     }
+    },
+    "y": {
+     "field": "weekday",
+     "type": "ordinal",
+     "sort": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "title": null,
+     "axis": {
+      "labelExpr": "slice(datum.value, 0, 3)"
+     }
+    },
+    "color": {
+     "field": "touch_k",
+     "type": "quantitative",
+     "title": "'000 touch-ons",
+     "scale": {
+      "scheme": "blues"
+     },
+     "legend": {
+      "format": ".0f",
+      "gradientLength": 160
+     }
+    },
+    "tooltip": [
+     {
+      "field": "date",
+      "title": "Date"
+     },
+     {
+      "field": "weekday",
+      "title": "Day"
+     },
+     {
+      "field": "touch_k",
+      "title": "'000 touch-ons (at least)",
+      "format": ".1f"
+     },
+     {
+      "field": "holiday",
+      "title": "Public holiday"
+     }
+    ]
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.holiday != ''"
+    }
+   ],
+   "mark": {
+    "type": "rect",
+    "fill": null,
+    "strokeWidth": 2.5
+   },
+   "encoding": {
+    "x": {
+     "field": "week_start",
+     "type": "ordinal",
+     "title": "Week starting",
+     "axis": {
+      "labelAngle": 0,
+      "labelOverlap": true,
+      "labelExpr": "utcFormat(toDate(datum.value), '%-d %b')"
+     }
+    },
+    "y": {
+     "field": "weekday",
+     "type": "ordinal",
+     "sort": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "title": null,
+     "axis": {
+      "labelExpr": "slice(datum.value, 0, 3)"
+     }
+    },
+    "stroke": {
+     "datum": "Public holiday",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Public holiday"
+      ],
+      "range": [
+       "#d6452f"
+      ]
+     },
+     "legend": {
+      "symbolType": "square",
+      "symbolFillColor": "transparent",
+      "symbolStrokeWidth": 2.5
+     }
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.holiday != ''"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 9,
+    "fontWeight": "bold",
+    "color": "#d6452f",
+    "text": "\u25cf",
+    "dy": 0
+   },
+   "encoding": {
+    "x": {
+     "field": "week_start",
+     "type": "ordinal",
+     "title": "Week starting",
+     "axis": {
+      "labelAngle": 0,
+      "labelOverlap": true,
+      "labelExpr": "utcFormat(toDate(datum.value), '%-d %b')"
+     }
+    },
+    "y": {
+     "field": "weekday",
+     "type": "ordinal",
+     "sort": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "title": null,
+     "axis": {
+      "labelExpr": "slice(datum.value, 0, 3)"
+     }
+    }
+   }
+  }
+ ]
+}

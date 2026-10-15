@@ -1,0 +1,142 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Dumbbell: public transport share of passenger-km by city before COVID-19 (2018-19), at its COVID-19 low point (year printed on the dot) and after (2024-25).",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": [
+  "COVID-19 effect on public transport",
+  "share of distance travelled"
+ ],
+ "data": {
+  "url": "data/car_vs_pt.csv"
+ },
+ "width": "container",
+ "height": 300,
+ "encoding": {
+  "y": {
+   "field": "city",
+   "type": "nominal",
+   "sort": [
+    "Sydney",
+    "Melbourne",
+    "Brisbane",
+    "Perth",
+    "Adelaide",
+    "Canberra",
+    "Hobart",
+    "Darwin"
+   ],
+   "title": null
+  },
+  "x": {
+   "field": "pt_share_of_pkm_pct",
+   "type": "quantitative",
+   "title": "Share of distance travelled (%)",
+   "scale": {
+    "domain": [
+     0,
+     18
+    ]
+   }
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "line",
+    "color": "#8a8f98",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "detail": {
+     "field": "city"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "circle",
+    "size": 120,
+    "opacity": 1
+   },
+   "encoding": {
+    "color": {
+     "field": "period",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Before",
+       "Low point",
+       "After"
+      ],
+      "range": [
+       "#9db7d5",
+       "#d6452f",
+       "#1d4e89"
+      ]
+     }
+    },
+    "tooltip": [
+     {
+      "field": "city"
+     },
+     {
+      "field": "period",
+      "title": "Point"
+     },
+     {
+      "field": "fy",
+      "title": "Year"
+     },
+     {
+      "field": "pt_share_of_pkm_pct",
+      "title": "Public transport share (%)"
+     }
+    ]
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.period == 'Low point'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "dy": -12,
+    "fontSize": 10,
+    "color": "#d6452f"
+   },
+   "encoding": {
+    "text": {
+     "field": "fy"
+    }
+   }
+  }
+ ]
+}

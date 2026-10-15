@@ -1,0 +1,25 @@
+city,period,fy,pt_share_of_pkm_pct
+Sydney,Before,2018-19,16.0
+Sydney,Low point,2021-22,8.4
+Sydney,After,2024-25,13.9
+Melbourne,Before,2018-19,11.5
+Melbourne,Low point,2020-21,5.3
+Melbourne,After,2024-25,9.7
+Brisbane,Before,2018-19,8.1
+Brisbane,Low point,2021-22,5.0
+Brisbane,After,2024-25,7.7
+Adelaide,Before,2018-19,6.9
+Adelaide,Low point,2021-22,4.6
+Adelaide,After,2024-25,6.2
+Perth,Before,2018-19,7.0
+Perth,Low point,2021-22,5.0
+Perth,After,2024-25,6.5
+Hobart,Before,2018-19,4.2
+Hobart,Low point,2020-21,3.3
+Hobart,After,2024-25,3.5
+Darwin,Before,2018-19,8.1
+Darwin,Low point,2020-21,4.8
+Darwin,After,2024-25,5.2
+Canberra,Before,2018-19,4.4
+Canberra,Low point,2021-22,2.8
+Canberra,After,2024-25,4.1

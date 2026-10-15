@@ -1,0 +1,380 @@
+station,mode,lat,lon,entries
+Aberdeen,Train,-32.1671,150.8921,604
+Adamstown,Train,-32.9337,151.7201,31530
+Albion Park,Train,-34.5626,150.7985,86826
+Allawah,Train,-33.9696,151.1143,740148
+Arlington,Light rail,-33.9018,151.1381,137764
+Arncliffe,Train,-33.9365,151.1473,687655
+Artarmon,Train,-33.8089,151.1853,1187460
+Ashfield,Train,-33.8876,151.1255,3153055
+Asquith,Train,-33.6888,151.108,368615
+Auburn,Train,-33.8493,151.0329,4238242
+Austinmer,Train,-34.3064,150.9293,27061
+Awaba,Train,-33.0129,151.5416,7417
+Bank Street,Light rail,-33.8709,151.1923,132928
+Banksia,Train,-33.9453,151.1404,421673
+Bankstown,Train,-33.9179,151.0347,1131032
+Barangaroo,Metro,-33.8592,151.2026,2469740
+Bardwell Park,Train,-33.9316,151.1249,289719
+Bargo,Train,-34.2914,150.5802,13634
+Bathurst,Train,-33.4256,149.5832,34018
+Beecroft,Train,-33.75,151.0663,390371
+Bell,Train,-33.5057,150.2789,1249
+Bella Vista,Metro,-33.7306,150.944,1023524
+Bellambi,Train,-34.3633,150.9099,28238
+Belmore,Train,-33.9172,151.0887,0
+Benaud Oval,Light rail,-33.8008,151.0046,156422
+Berala,Train,-33.8718,151.0324,602849
+Beresfield,Train,-32.7989,151.6579,41985
+Berowra,Train,-33.6237,151.153,331791
+Berry,Train,-34.7803,150.697,21349
+Beverly Hills,Train,-33.9488,151.0817,558111
+Bexley North,Train,-33.9376,151.1134,371550
+Birrong,Train,-33.8933,151.024,117948
+Blackheath,Train,-33.6329,150.2843,82234
+Blacktown,Train,-33.7682,150.9075,4178083
+Blaxland,Train,-33.7436,150.6096,122752
+Bomaderry,Train,-34.8538,150.6098,88987
+Bombo,Train,-34.658,150.854,10043
+Bondi Junction,Train,-33.8912,151.2484,6589979
+Booragul,Train,-32.9714,151.6047,11425
+Bowral,Train,-34.4781,150.4167,66272
+Branxton,Train,-32.6623,151.3456,2674
+Bridge Street,Light rail,-33.8641,151.2075,1431382
+Broadmeadow,Train,-32.923,151.7347,271488
+Bullaburra,Train,-33.7236,150.4146,13724
+Bulli,Train,-34.3345,150.9147,40394
+Bundanoon,Train,-34.6561,150.2987,4032
+Burradoo,Train,-34.494,150.3983,3352
+Burwood,Train,-33.8773,151.1048,6202297
+Cabramatta,Train,-33.8949,150.9388,2200469
+Campbelltown,Train,-34.0638,150.8139,1628180
+Campsie,Train,-33.9105,151.1026,0
+Canley Vale,Train,-33.8868,150.944,671048
+Canterbury,Train,-33.9117,151.1182,0
+Capitol Square,Light rail,-33.8798,151.2057,865779
+Cardiff,Train,-32.9418,151.663,275698
+Caringbah,Train,-34.0416,151.1227,703994
+Carlingford,Light rail,-33.782,151.0472,252171
+Carlton,Train,-33.9683,151.1243,766895
+Carramar,Train,-33.8843,150.9615,169761
+Castle Hill,Metro,-33.7315,151.0078,2368750
+Casula,Train,-33.9498,150.9119,106240
+Central,Light rail,-33.8839,151.2058,7013508
+Central,Train,-33.8839,151.2058,26183603
+Chatswood,Train,-33.7971,151.1808,10169951
+Cheltenham,Train,-33.7559,151.0789,263587
+Cherrybrook,Metro,-33.7367,151.032,1501776
+Chester Hill,Train,-33.8835,150.9994,317977
+Chinatown,Light rail,-33.8786,151.2056,4146723
+Church Street,Light rail,-33.8129,151.0036,259341
+Circular Quay,Light rail,-33.8613,151.2104,4050899
+Circular Quay,Train,-33.8613,151.2104,7304202
+Civic,Light rail,-32.927,151.7717,183091
+Clarendon,Train,-33.609,150.7886,25883
+Clyde,Train,-33.8363,151.0175,276340
+Coalcliff,Train,-34.2423,150.9772,4344
+Cockle Creek,Train,-32.9427,151.6234,17101
+Coledale,Train,-34.2894,150.9433,10781
+Como,Train,-34.0043,151.068,180315
+Concord West,Train,-33.8487,151.0856,559057
+Coniston,Train,-34.4375,150.8855,68659
+Convention,Light rail,-33.8726,151.1981,564943
+Corrimal,Train,-34.3757,150.905,37474
+Cowan,Train,-33.5931,151.1717,13836
+Cringila,Train,-34.4672,150.8784,4039
+Cronulla,Train,-34.0563,151.1515,778361
+Crown Street,Light rail,-32.9264,151.7772,73438
+Crows Nest,Metro,-33.8256,151.1992,3318642
+Croydon,Train,-33.8832,151.1155,648705
+Dapto,Train,-34.4921,150.7923,149048
+Denistone,Train,-33.7999,151.0876,161360
+Domestic Airport,Train,-33.9337,151.1808,2692073
+Doonside,Train,-33.764,150.8684,761895
+Dora Creek,Train,-33.0832,151.5012,13607
+Douglas Park,Train,-34.1832,150.7099,5212
+Dulwich Grove,Light rail,-33.905,151.139,116040
+Dulwich Hill,Light rail,-33.9103,151.1401,179112
+Dulwich Hill,Train,-33.9103,151.1401,0
+Dundas,Light rail,-33.8038,151.0332,124088
+Dungog,Train,-32.4023,151.7595,6548
+East Hills,Train,-33.9616,150.9849,243692
+East Maitland,Train,-32.7449,151.5874,10482
+East Richmond,Train,-33.6018,150.7592,55193
+Eastwood,Train,-33.79,151.0822,2075639
+Edgecliff,Train,-33.8793,151.2362,2287009
+Edmondson Park,Train,-33.9693,150.8587,1219700
+Emu Plains,Train,-33.7456,150.6723,303569
+Engadine,Train,-34.0679,151.0147,327386
+Epping,Train,-33.7728,151.0822,4670973
+Erskineville,Train,-33.9009,151.1853,697218
+Es Marks,Light rail,-33.9058,151.2239,336477
+Exeter,Train,-34.6138,150.3173,1204
+Exhibition Centre,Light rail,-33.8772,151.1997,296870
+Fairfield,Train,-33.8723,150.9571,1628672
+Fairy Meadow,Train,-34.3958,150.8962,32348
+Fassifern,Train,-32.9858,151.5813,125613
+Faulconbridge,Train,-33.6965,150.535,22330
+Fennell Street,Light rail,-33.8052,151.0058,284826
+Flemington,Train,-33.8648,151.0698,1533894
+Gadigal,Metro,-33.8739,151.2086,5849630
+Gerringong,Train,-34.7449,150.8175,30941
+Glebe,Light rail,-33.8772,151.1874,296032
+Glenbrook,Train,-33.769,150.6208,108872
+Glenfield,Train,-33.9724,150.8928,1590282
+Gordon,Train,-33.756,151.1545,1844293
+Gosford,Train,-33.4239,151.3417,1239966
+Goulburn,Train,-34.7585,149.7193,12376
+Granville,Train,-33.8332,151.0125,2144203
+Green Square,Train,-33.9061,151.2025,2666654
+Greta,Train,-32.6866,151.3841,680
+Guildford,Train,-33.8545,150.9844,798206
+Gymea,Train,-34.0349,151.0855,518934
+Hamilton,Train,-32.9187,151.7489,199185
+Harris Park,Train,-33.8233,151.0076,768204
+Hawkesbury River,Train,-33.5468,151.2265,91009
+Hawthorne,Light rail,-33.8797,151.1471,115958
+Haymarket,Light rail,-33.8814,151.2053,2139018
+Hazelbrook,Train,-33.724,150.4546,73259
+Heathcote,Train,-34.0882,151.008,135823
+Helensburgh,Train,-34.1769,150.9948,116361
+Hexham,Train,-32.8295,151.6844,2861
+High Street,Train,-32.7414,151.5637,4092
+Hilldale,Train,-32.5045,151.6498,70
+Hills Showground,Metro,-33.7278,150.9873,1408043
+Holsworthy,Train,-33.9632,150.9569,804049
+Homebush,Train,-33.8667,151.0864,1130735
+Honeysuckle,Light rail,-32.9265,151.7658,109195
+Hornsby,Train,-33.7028,151.0985,3381739
+Hurlstone Park,Train,-33.9104,151.1321,0
+Hurstville,Train,-33.9675,151.1028,5676900
+Ingleburn,Train,-33.9971,150.8649,828821
+International Airport,Train,-33.935,151.1659,1671794
+Jannali,Train,-34.0161,151.0647,650189
+John Street Square,Light rail,-33.8672,151.1919,253039
+Jubilee Park,Light rail,-33.8754,151.1788,243898
+Juniors Kingsford,Light rail,-33.9251,151.2292,914027
+Katoomba,Train,-33.7116,150.3112,420144
+Kellyville,Metro,-33.7135,150.9353,1272135
+Kembla Grange,Train,-34.4702,150.8173,2318
+Kensington,Light rail,-33.9094,151.2234,479292
+Kiama,Train,-34.6725,150.8547,201664
+Killara,Train,-33.7654,151.1616,581894
+Kings Cross,Train,-33.8745,151.2223,3895249
+Kingsford,Light rail,-33.9219,151.2269,549405
+Kingsgrove,Train,-33.9406,151.1005,612184
+Kingswood,Train,-33.7583,150.7198,579361
+Kirrawee,Train,-34.035,151.0713,484377
+Kogarah,Train,-33.9621,151.1326,2977031
+Koolewong,Train,-33.467,151.3187,17992
+Kotara,Train,-32.9414,151.6985,17883
+Lakemba,Train,-33.9201,151.076,0
+Lapstone,Train,-33.7737,150.6428,22570
+Lawson,Train,-33.7191,150.4298,40567
+Leichhardt North,Light rail,-33.875,151.1539,107730
+Leightonfield,Train,-33.8815,150.985,69447
+Leppington,Train,-33.9544,150.8081,1234128
+Leumeah,Train,-34.0512,150.8301,696417
+Leura,Train,-33.7117,150.3303,140362
+Lewisham,Train,-33.8933,151.1473,742119
+Lewisham West,Light rail,-33.894,151.1432,170718
+Lidcombe,Train,-33.8639,151.0454,3889558
+Lilyfield,Light rail,-33.8741,151.1651,107416
+Linden,Train,-33.715,150.5053,4258
+Lindfield,Train,-33.7752,151.1691,1092827
+Lisarow,Train,-33.3823,151.3698,42490
+Lithgow,Train,-33.4805,150.1574,90880
+Liverpool,Train,-33.9251,150.9271,2414849
+Lochinvar,Train,-32.7207,151.4491,0
+Loftus,Train,-34.0451,151.0513,109320
+Lysaghts,Train,-34.4548,150.8761,0
+Macarthur,Train,-34.0721,150.7967,844158
+Macdonaldtown,Train,-33.8967,151.1863,334302
+Macquarie Fields,Train,-33.9848,150.8789,258389
+Macquarie Park,Metro,-33.785,151.1286,1376292
+Macquarie University,Metro,-33.7774,151.1182,4591750
+Maitland,Train,-32.738,151.5521,116026
+Marayong,Train,-33.7465,150.9002,289836
+Marion,Light rail,-33.8838,151.1451,100246
+Marrickville,Train,-33.9141,151.154,0
+Martin Place,Train,-33.8677,151.2106,10652267
+Martins Creek,Train,-32.5587,151.6185,0
+Marulan,Train,-34.7095,150.0064,516
+Mascot,Train,-33.9232,151.1873,4618198
+Meadowbank,Train,-33.8162,151.0901,1448817
+Medlow Bath,Train,-33.6739,150.2808,12626
+Menangle,Train,-34.1252,150.7444,4220
+Menangle Park,Train,-34.1037,150.745,3590
+Merrylands,Train,-33.8364,150.9929,1792974
+Metford,Train,-32.7649,151.6179,19839
+Milsons Point,Train,-33.8459,151.2118,1958887
+Mindaribba,Train,-32.6693,151.5843,0
+Minnamurra,Train,-34.6257,150.8523,30167
+Minto,Train,-34.0271,150.8426,797367
+Miranda,Train,-34.0364,151.1029,979087
+Mittagong,Train,-34.4527,150.4477,45392
+Moore Park,Light rail,-33.8938,151.2218,834632
+Morisset,Train,-33.1092,151.4877,214674
+Mortdale,Train,-33.9706,151.0813,947311
+Moss Vale,Train,-34.548,150.372,46312
+Mount Colah,Train,-33.672,151.1145,170013
+Mount Druitt,Train,-33.7695,150.8198,1556009
+Mount Kuring-Gai,Train,-33.653,151.1368,62711
+Mount Victoria,Train,-33.5881,150.257,28481
+Mulgrave,Train,-33.6267,150.8306,71566
+Museum,Train,-33.8757,151.2101,2623293
+Muswellbrook,Train,-32.2675,150.8903,7748
+Narara,Train,-33.3948,151.3443,64506
+Narwee,Train,-33.9475,151.0697,506914
+Newcastle Beach,Light rail,-32.9275,151.7862,147853
+Newcastle Interchange,Light rail,-32.9243,151.7596,363930
+Newcastle Interchange,Train,-32.9243,151.7596,585044
+Newtown,Train,-33.8979,151.1799,2934801
+Ngara,Light rail,-33.8015,151.0014,75955
+Niagara Park,Train,-33.3833,151.3543,28362
+Normanhurst,Train,-33.7208,151.0972,335219
+North Ryde,Metro,-33.7944,151.1379,1059120
+North Strathfield,Train,-33.8587,151.088,751370
+North Sydney,Train,-33.8412,151.2074,2993141
+North Wollongong,Train,-34.4126,150.8913,383435
+Norwest,Metro,-33.7343,150.9638,1048101
+Oak Flats,Train,-34.5722,150.8209,119869
+Oatley,Train,-33.9808,151.079,517944
+Olympic Park,Train,-33.8465,151.0695,1080444
+Otford,Train,-34.2102,151.006,12567
+Ourimbah,Train,-33.3596,151.37,48234
+Paddy's Markets,Light rail,-33.8793,151.2027,838660
+Padstow,Train,-33.9519,151.0326,688296
+Panania,Train,-33.9543,150.9978,455069
+Parramatta,Train,-33.8176,151.0055,11807358
+Parramatta Square,Light rail,-33.8156,151.0051,1418192
+Paterson,Train,-32.6024,151.6146,1651
+Pendle Hill,Train,-33.8013,150.9563,874603
+Pennant Hills,Train,-33.7379,151.0725,585170
+Penrith,Train,-33.7501,150.6961,2012228
+Penrose,Train,-34.6726,150.2118,0
+Penshurst,Train,-33.9661,151.0894,802858
+Petersham,Train,-33.8939,151.1552,941953
+Picton,Train,-34.1791,150.6126,35624
+Point Clare,Train,-33.4458,151.3286,43345
+Port Kembla,Train,-34.4772,150.9019,20268
+Port Kembla North,Train,-34.4728,150.888,3971
+Prince Alfred Square,Light rail,-33.8091,151.0053,344397
+Punchbowl,Train,-33.9254,151.0559,0
+Pymble,Train,-33.7447,151.1421,609402
+Pyrmont Bay,Light rail,-33.8692,151.1976,494704
+Quakers Hill,Train,-33.728,150.8867,682336
+Queens Wharf,Light rail,-32.9254,151.7808,134321
+Qvb,Light rail,-33.8716,151.207,2886391
+Randwick,Light rail,-33.9171,151.2405,1176932
+Redfern,Train,-33.8924,151.1985,6983285
+Regents Park,Train,-33.883,151.0242,422238
+Revesby,Train,-33.9525,151.0148,1536164
+Rhodes,Train,-33.8305,151.087,2782125
+Richmond,Train,-33.5991,150.7532,205302
+Riverstone,Train,-33.679,150.8603,373357
+Riverwood,Train,-33.9515,151.052,914905
+Robin Thomas,Light rail,-33.8169,151.0112,155484
+Rockdale,Train,-33.9519,151.1369,2761906
+Rooty Hill,Train,-33.7715,150.845,1010039
+Rosehill Gardens,Light rail,-33.8181,151.0245,54460
+Roseville,Train,-33.7842,151.1773,799085
+Rouse Hill,Metro,-33.692,150.9243,1603458
+Royal Randwick,Light rail,-33.9052,151.2288,267594
+Rozelle Bay,Light rail,-33.8718,151.1727,136268
+Rydal,Train,-33.4836,150.0318,128
+Sandgate,Train,-32.8719,151.7026,4734
+Scarborough,Train,-34.265,150.9658,6317
+Schofields,Train,-33.7045,150.8738,1199506
+Scone,Train,-32.0469,150.8669,6741
+Sefton,Train,-33.8852,151.0113,249524
+Seven Hills,Train,-33.7744,150.9365,1616012
+Shellharbour Junction,Train,-34.5913,150.8447,59424
+Singleton,Train,-32.5718,151.1652,9442
+Springwood,Train,-33.6988,150.564,252719
+St James,Train,-33.8707,151.2118,2085460
+St Leonards,Train,-33.8224,151.1941,3036804
+St Marys,Train,-33.7623,150.776,1214301
+St Peters,Train,-33.9074,151.1803,775987
+Stanmore,Train,-33.8945,151.164,828811
+Stanwell Park,Train,-34.2266,150.9809,16634
+Strathfield,Train,-33.8718,151.0944,7343907
+Summer Hill,Train,-33.8906,151.1394,952354
+Surry Hills,Light rail,-33.8881,151.2119,993785
+Sutherland,Train,-34.0318,151.0572,1821943
+Sydenham,Train,-33.9144,151.1666,5724996
+Tahmoor,Train,-34.2237,150.5899,43512
+Tallawong,Metro,-33.6916,150.906,2440258
+Tallong,Train,-34.7183,150.0865,55
+Tarana,Train,-33.5241,149.9076,1521
+Tarro,Train,-32.8093,151.6699,1659
+Tascott,Train,-33.4514,151.3181,27264
+Taverners Hill,Light rail,-33.8893,151.1452,63651
+Telarah,Train,-32.7239,151.5396,38505
+Telopea,Light rail,-33.7944,151.0411,171490
+Tempe,Train,-33.9245,151.1565,378930
+Teralba,Train,-32.9627,151.6035,14199
+The Star,Light rail,-33.8673,151.1952,755230
+Thirroul,Train,-34.3184,150.9187,267572
+Thornleigh,Train,-33.7319,151.0783,476659
+Thornton,Train,-32.7836,151.6398,70907
+Toongabbie,Train,-33.7873,150.9514,798585
+Town Hall,Light rail,-33.8736,151.2069,2892361
+Town Hall,Train,-33.8736,151.2069,21852841
+Towradgi,Train,-34.3847,150.9012,21521
+Tramway Avenue,Light rail,-33.8172,151.0185,295759
+Tuggerah,Train,-33.3081,151.4202,343590
+Turramurra,Train,-33.7322,151.1283,998578
+Turrella,Train,-33.93,151.1399,285822
+Unanderra,Train,-34.4544,150.8463,118246
+Unsw Anzac Parade,Light rail,-33.9167,151.2259,1677725
+Unsw High Street,Light rail,-33.9164,151.2355,1125303
+Valley Heights,Train,-33.7045,150.5838,15872
+Victoria Cross,Metro,-33.8364,151.2074,4928601
+Victoria Street,Train,-32.751,151.5938,80604
+Villawood,Train,-33.8809,150.976,144913
+Vineyard,Train,-33.6505,150.8512,46496
+Wahroonga,Train,-33.7174,151.1169,511563
+Waitara,Train,-33.71,151.1043,815386
+Wallarobba,Train,-32.4961,151.6957,0
+Wansey Road,Light rail,-33.9105,151.2352,272838
+Warabrook,Train,-32.8871,151.7099,52234
+Waratah,Train,-32.9028,151.7317,49218
+Waratah Mills,Light rail,-33.8988,151.1401,68678
+Warnervale,Train,-33.2476,151.4486,72724
+Warrawee,Train,-33.7243,151.1218,250848
+Warrimoo,Train,-33.7212,150.602,30686
+Warwick Farm,Train,-33.9134,150.935,639705
+Waterfall,Train,-34.1344,150.9945,109591
+Waterloo,Metro,-33.8975,151.2002,1717569
+Waverton,Train,-33.8382,151.1979,565799
+Wentworth Falls,Train,-33.7095,150.3763,104068
+Wentworth Park,Light rail,-33.8744,151.194,540855
+Wentworthville,Train,-33.8072,150.9726,1068131
+Werrington,Train,-33.7593,150.7583,368810
+West Ryde,Train,-33.8072,151.0902,1342871
+Westmead,Light rail,-33.8085,150.988,228693
+Westmead,Train,-33.8085,150.988,1856092
+Westmead Hospital,Light rail,-33.8047,150.9901,206144
+Wiley Park,Train,-33.923,151.0673,0
+Windsor,Train,-33.6139,150.8114,190259
+Wingello,Train,-34.6922,150.1584,290
+Wirragulla,Train,-32.4618,151.7435,0
+Wolli Creek,Train,-33.9285,151.1541,2530329
+Wollongong,Train,-34.427,150.8882,534068
+Wollstonecraft,Train,-33.8318,151.1919,586698
+Wombarra,Train,-34.2759,150.9531,8601
+Wondabyne,Train,-33.4921,151.257,4380
+Woodford,Train,-33.7354,150.4819,20665
+Woolooware,Train,-34.0477,151.144,327414
+Woonona,Train,-34.3502,150.915,30356
+Woy Woy,Train,-33.4851,151.3236,957627
+Wyee,Train,-33.1804,151.4871,78757
+Wynyard,Light rail,-33.8659,151.2058,2330242
+Wynyard,Train,-33.8659,151.2058,13741564
+Wyong,Train,-33.2855,151.4253,363967
+Yagoona,Train,-33.9066,151.0242,270786
+Yallamundi,Light rail,-33.81,151.0293,239476
+Yennora,Train,-33.8647,150.971,282864
+Yerrinbool,Train,-34.3717,150.5435,4863
+Zig Zag,Train,-33.4718,150.2021,738

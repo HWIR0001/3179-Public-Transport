@@ -1,0 +1,687 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Proportional-symbol map of Sydney station entries: size, yellow shade and opacity all show usage. Rail lines and postcodes as base layers.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Sydney: busiest stations, last 12 months of data",
+ "width": 390,
+ "height": 400,
+ "data": {
+  "url": "data/syd_stations.csv"
+ },
+ "projection": {
+  "type": "mercator",
+  "scale": 27500,
+  "center": [
+   151.08,
+   -33.85
+  ]
+ },
+ "transform": [
+  {
+   "filter": "datum.lon > 150.6 && datum.lon < 151.4 && datum.lat > -34.2 && datum.lat < -33.5"
+  }
+ ],
+ "layer": [
+  {
+   "data": {
+    "url": "data/syd_poa.json",
+    "format": {
+     "type": "json",
+     "property": "features"
+    }
+   },
+   "mark": {
+    "type": "geoshape",
+    "filled": false,
+    "stroke": "#b8c2cc",
+    "strokeWidth": 0.5,
+    "opacity": 0.8,
+    "clip": true
+   },
+   "encoding": {
+    "stroke": {
+     "datum": "Postcode boundary",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Rail line",
+       "Postcode boundary"
+      ],
+      "range": [
+       "#4f7cac",
+       "#b8c2cc"
+      ]
+     },
+     "legend": {
+      "orient": "bottom",
+      "symbolType": "stroke",
+      "symbolStrokeWidth": 2.5
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "url": "data/syd_rail.json",
+    "format": {
+     "type": "json"
+    }
+   },
+   "mark": {
+    "type": "geoshape",
+    "filled": false,
+    "stroke": "#4f7cac",
+    "strokeWidth": 1.6,
+    "opacity": 0.95,
+    "clip": true
+   },
+   "encoding": {
+    "stroke": {
+     "datum": "Rail line",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Rail line",
+       "Postcode boundary"
+      ],
+      "range": [
+       "#4f7cac",
+       "#b8c2cc"
+      ]
+     },
+     "legend": {
+      "orient": "bottom",
+      "symbolType": "stroke",
+      "symbolStrokeWidth": 2.5
+     }
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "circle",
+    "stroke": "#7a5400",
+    "strokeWidth": 0.6,
+    "clip": true
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "size": {
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       27000000.0
+      ],
+      "range": [
+       0,
+       1500
+      ],
+      "type": "sqrt"
+     },
+     "title": "Station entries per year",
+     "legend": {
+      "type": "symbol",
+      "orient": "bottom",
+      "values": [
+       1000000.0,
+       5000000.0,
+       20000000.0
+      ],
+      "format": ".2s",
+      "title": "Station entries per year"
+     }
+    },
+    "color": {
+     "field": "entries",
+     "type": "quantitative",
+     "title": "Station entries per year",
+     "scale": {
+      "type": "sqrt",
+      "domain": [
+       0,
+       27000000.0
+      ],
+      "range": [
+       "#ffe9a0",
+       "#f2a900"
+      ]
+     },
+     "legend": {
+      "type": "symbol",
+      "orient": "bottom",
+      "values": [
+       1000000.0,
+       5000000.0,
+       20000000.0
+      ],
+      "format": ".2s",
+      "title": "Station entries per year"
+     }
+    },
+    "opacity": {
+     "field": "entries",
+     "type": "quantitative",
+     "scale": {
+      "type": "sqrt",
+      "domain": [
+       0,
+       27000000.0
+      ],
+      "range": [
+       0.35,
+       0.95
+      ]
+     },
+     "legend": null
+    },
+    "order": {
+     "field": "entries",
+     "sort": "descending"
+    },
+    "tooltip": [
+     {
+      "field": "station",
+      "title": "Station"
+     },
+     {
+      "field": "mode",
+      "title": "Mode"
+     },
+     {
+      "field": "entries",
+      "title": "Entries per year",
+      "format": ","
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "stroke": "#1f2933",
+    "strokeWidth": 0.8
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat",
+     "type": "quantitative"
+    },
+    "longitude2": {
+     "field": "lon2"
+    },
+    "latitude2": {
+     "field": "lat2"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'left'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": 4,
+    "dy": 0,
+    "color": "#ffffff",
+    "stroke": "#ffffff",
+    "strokeWidth": 3.5
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'right'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": -4,
+    "dy": 0,
+    "color": "#ffffff",
+    "stroke": "#ffffff",
+    "strokeWidth": 3.5
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'center'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": 0,
+    "dy": -8,
+    "color": "#ffffff",
+    "stroke": "#ffffff",
+    "strokeWidth": 3.5
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'left'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": 4,
+    "dy": 0,
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'right'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": -4,
+    "dy": 0,
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "station": "Town Hall",
+      "lon": 151.2069,
+      "lat": -33.8736,
+      "entries": 21852841,
+      "lon2": 151.262,
+      "lat2": -33.845,
+      "align": "left",
+      "label": "Town Hall"
+     },
+     {
+      "station": "Central",
+      "lon": 151.2058,
+      "lat": -33.8839,
+      "entries": 26183603,
+      "lon2": 151.262,
+      "lat2": -33.905,
+      "align": "left",
+      "label": "Central"
+     },
+     {
+      "station": "Parramatta",
+      "lon": 151.0055,
+      "lat": -33.8176,
+      "entries": 11807358,
+      "lon2": 151.0055,
+      "lat2": -33.775,
+      "align": "center",
+      "label": "Parramatta"
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.align == 'center'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "lineBreak": "\n",
+    "lineHeight": 13,
+    "dx": 0,
+    "dy": -8,
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "longitude": {
+     "field": "lon2",
+     "type": "quantitative"
+    },
+    "latitude": {
+     "field": "lat2",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  }
+ ]
+}

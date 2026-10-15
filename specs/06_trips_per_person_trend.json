@@ -1,0 +1,337 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Lines: public transport trips per resident since 2001, with spaced end labels.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Public transport trips per resident since 2001",
+ "data": {
+  "url": "data/city_pop_trips.csv"
+ },
+ "width": "container",
+ "height": 320,
+ "layer": [
+  {
+   "mark": {
+    "type": "line",
+    "strokeWidth": 2.2
+   },
+   "encoding": {
+    "x": {
+     "field": "year_end",
+     "type": "quantitative",
+     "title": "Year ending 30 June",
+     "axis": {
+      "format": "d",
+      "tickMinStep": 4
+     },
+     "scale": {
+      "domain": [
+       2001,
+       2033
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "trips_per_person",
+     "type": "quantitative",
+     "title": "Trips per person per year"
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    },
+    "tooltip": [
+     {
+      "field": "city"
+     },
+     {
+      "field": "year_end",
+      "title": "Year ending",
+      "format": "d"
+     },
+     {
+      "field": "trips_per_person",
+      "title": "Trips per person"
+     },
+     {
+      "field": "population",
+      "title": "Population",
+      "format": ","
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "city": "Sydney",
+      "v": 125.7,
+      "y": 125.7,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Sydney 126"
+     },
+     {
+      "city": "Melbourne",
+      "v": 88.3,
+      "y": 88.3,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Melbourne 88"
+     },
+     {
+      "city": "Perth",
+      "v": 60.6,
+      "y": 60.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Perth 61"
+     },
+     {
+      "city": "Brisbane",
+      "v": 57.0,
+      "y": 52.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Brisbane 57"
+     },
+     {
+      "city": "Adelaide",
+      "v": 46.7,
+      "y": 44.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Adelaide 47"
+     },
+     {
+      "city": "Canberra",
+      "v": 42.5,
+      "y": 36.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Canberra 42"
+     },
+     {
+      "city": "Darwin",
+      "v": 28.9,
+      "y": 28.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Darwin 29"
+     },
+     {
+      "city": "Hobart",
+      "v": 26.2,
+      "y": 20.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Hobart 26"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2001,
+       2033
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    },
+    "x2": {
+     "field": "x1"
+    },
+    "y": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "y2": {
+     "field": "y"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "city": "Sydney",
+      "v": 125.7,
+      "y": 125.7,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Sydney 126"
+     },
+     {
+      "city": "Melbourne",
+      "v": 88.3,
+      "y": 88.3,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Melbourne 88"
+     },
+     {
+      "city": "Perth",
+      "v": 60.6,
+      "y": 60.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Perth 61"
+     },
+     {
+      "city": "Brisbane",
+      "v": 57.0,
+      "y": 52.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Brisbane 57"
+     },
+     {
+      "city": "Adelaide",
+      "v": 46.7,
+      "y": 44.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Adelaide 47"
+     },
+     {
+      "city": "Canberra",
+      "v": 42.5,
+      "y": 36.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Canberra 42"
+     },
+     {
+      "city": "Darwin",
+      "v": 28.9,
+      "y": 28.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Darwin 29"
+     },
+     {
+      "city": "Hobart",
+      "v": 26.2,
+      "y": 20.6,
+      "x0": 2025,
+      "x1": 2027,
+      "lab": "Hobart 26"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "fontSize": 11,
+    "fontWeight": "bold"
+   },
+   "encoding": {
+    "x": {
+     "field": "x1",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2001,
+       2033
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    }
+   }
+  }
+ ]
+}

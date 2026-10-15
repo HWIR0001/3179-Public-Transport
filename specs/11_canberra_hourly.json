@@ -1,0 +1,197 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Lines: share of Canberra bus boardings by hour, July to February of 2019-20 and 2020-21; peak windows shaded.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Canberra: share of daily boardings by hour, July to February, before and during COVID-19",
+ "data": {
+  "url": "data/canberra_hourly.csv"
+ },
+ "width": "container",
+ "height": 300,
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "x": 7,
+      "x2": 9,
+      "t": "Morning peak"
+     },
+     {
+      "x": 15,
+      "x2": 18,
+      "t": "Afternoon peak"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rect",
+    "color": "#8a8f98",
+    "opacity": 0.18
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1,
+       23
+      ],
+      "nice": false
+     }
+    },
+    "x2": {
+     "field": "x2"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 7,
+      "x2": 9,
+      "t": "Morning peak"
+     },
+     {
+      "x": 15,
+      "x2": 18,
+      "t": "Afternoon peak"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontStyle": "italic",
+    "color": "#1f2933",
+    "align": "center",
+    "dy": 8,
+    "baseline": "top"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1,
+       23
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "datum": 17
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "strokeWidth": 2.4,
+    "point": {
+     "filled": true,
+     "size": 36
+    }
+   },
+   "encoding": {
+    "x": {
+     "field": "hour",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1,
+       23
+      ],
+      "nice": false
+     },
+     "title": "Hour of day (24-hour clock, hour starting)",
+     "axis": {
+      "values": [
+       1,
+       4,
+       7,
+       10,
+       13,
+       16,
+       19,
+       22
+      ]
+     }
+    },
+    "y": {
+     "field": "share_pct",
+     "type": "quantitative",
+     "title": "Share of the period's boardings (%)",
+     "scale": {
+      "domain": [
+       0,
+       18
+      ],
+      "nice": false
+     }
+    },
+    "color": {
+     "field": "period",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "July-Feb 2019-20",
+       "July-Feb 2020-21"
+      ],
+      "range": [
+       "#d9730d",
+       "#1d4e89"
+      ]
+     }
+    },
+    "tooltip": [
+     {
+      "field": "period",
+      "title": "Period"
+     },
+     {
+      "field": "hour",
+      "title": "Hour starting"
+     },
+     {
+      "field": "share_pct",
+      "title": "Share of boardings (%)"
+     }
+    ]
+   }
+  }
+ ]
+}

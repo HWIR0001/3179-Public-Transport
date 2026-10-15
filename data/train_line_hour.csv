@@ -1,0 +1,384 @@
+line,hour,share_pct,peak_share
+Alamein,5,0.4,68.6
+Alamein,6,4.5,68.6
+Alamein,7,15.4,68.6
+Alamein,8,20.0,68.6
+Alamein,9,6.7,68.6
+Alamein,10,1.0,68.6
+Alamein,11,1.0,68.6
+Alamein,12,0.9,68.6
+Alamein,13,0.8,68.6
+Alamein,14,5.8,68.6
+Alamein,15,9.3,68.6
+Alamein,16,10.8,68.6
+Alamein,17,13.0,68.6
+Alamein,18,6.8,68.6
+Alamein,19,2.0,68.6
+Alamein,20,1.0,68.6
+Alamein,21,0.2,68.6
+Alamein,22,0.2,68.6
+Alamein,23,0.2,68.6
+Alamein,24,0.0,68.6
+Alamein,25,0.0,68.6
+Alamein,26,0.0,68.6
+Belgrave,4,0.1,57.3
+Belgrave,5,0.6,57.3
+Belgrave,6,2.9,57.3
+Belgrave,7,11.4,57.3
+Belgrave,8,12.5,57.3
+Belgrave,9,4.7,57.3
+Belgrave,10,3.7,57.3
+Belgrave,11,3.6,57.3
+Belgrave,12,3.5,57.3
+Belgrave,13,4.7,57.3
+Belgrave,14,4.9,57.3
+Belgrave,15,7.8,57.3
+Belgrave,16,10.8,57.3
+Belgrave,17,14.8,57.3
+Belgrave,18,6.7,57.3
+Belgrave,19,2.6,57.3
+Belgrave,20,1.5,57.3
+Belgrave,21,1.0,57.3
+Belgrave,22,0.9,57.3
+Belgrave,23,0.9,57.3
+Belgrave,24,0.2,57.3
+Belgrave,25,0.1,57.3
+Belgrave,26,0.0,57.3
+Belgrave,27,0.0,57.3
+Craigieburn,4,0.1,56.2
+Craigieburn,5,1.1,56.2
+Craigieburn,6,3.8,56.2
+Craigieburn,7,12.2,56.2
+Craigieburn,8,14.6,56.2
+Craigieburn,9,5.8,56.2
+Craigieburn,10,3.6,56.2
+Craigieburn,11,3.3,56.2
+Craigieburn,12,3.5,56.2
+Craigieburn,13,3.9,56.2
+Craigieburn,14,4.1,56.2
+Craigieburn,15,6.5,56.2
+Craigieburn,16,10.6,56.2
+Craigieburn,17,12.3,56.2
+Craigieburn,18,6.2,56.2
+Craigieburn,19,2.6,56.2
+Craigieburn,20,1.7,56.2
+Craigieburn,21,1.6,56.2
+Craigieburn,22,1.4,56.2
+Craigieburn,23,0.7,56.2
+Craigieburn,24,0.2,56.2
+Craigieburn,25,0.0,56.2
+Craigieburn,26,0.0,56.2
+Craigieburn,27,0.0,56.2
+Cranbourne,4,0.2,51.4
+Cranbourne,5,0.9,51.4
+Cranbourne,6,3.8,51.4
+Cranbourne,7,9.9,51.4
+Cranbourne,8,10.9,51.4
+Cranbourne,9,5.2,51.4
+Cranbourne,10,3.6,51.4
+Cranbourne,11,4.0,51.4
+Cranbourne,12,4.8,51.4
+Cranbourne,13,5.7,51.4
+Cranbourne,14,5.8,51.4
+Cranbourne,15,9.0,51.4
+Cranbourne,16,10.0,51.4
+Cranbourne,17,11.7,51.4
+Cranbourne,18,6.4,51.4
+Cranbourne,19,3.6,51.4
+Cranbourne,20,2.9,51.4
+Cranbourne,21,1.3,51.4
+Cranbourne,22,0.1,51.4
+Cranbourne,23,0.1,51.4
+Cranbourne,24,0.1,51.4
+Cranbourne,25,0.0,51.4
+Cranbourne,26,0.0,51.4
+Flemington Racecourse,8,18.2,40.2
+Flemington Racecourse,9,0.5,40.2
+Flemington Racecourse,10,3.1,40.2
+Flemington Racecourse,11,5.0,40.2
+Flemington Racecourse,12,9.0,40.2
+Flemington Racecourse,13,6.6,40.2
+Flemington Racecourse,14,14.2,40.2
+Flemington Racecourse,15,3.5,40.2
+Flemington Racecourse,16,2.4,40.2
+Flemington Racecourse,17,16.0,40.2
+Flemington Racecourse,18,3.9,40.2
+Flemington Racecourse,19,2.5,40.2
+Flemington Racecourse,20,0.4,40.2
+Flemington Racecourse,21,4.3,40.2
+Flemington Racecourse,22,4.7,40.2
+Flemington Racecourse,23,5.7,40.2
+Flemington Racecourse,24,0.0,40.2
+Frankston,4,0.1,57.6
+Frankston,5,0.8,57.6
+Frankston,6,3.2,57.6
+Frankston,7,12.7,57.6
+Frankston,8,14.3,57.6
+Frankston,9,5.0,57.6
+Frankston,10,3.4,57.6
+Frankston,11,3.2,57.6
+Frankston,12,3.5,57.6
+Frankston,13,3.7,57.6
+Frankston,14,4.5,57.6
+Frankston,15,8.7,57.6
+Frankston,16,9.7,57.6
+Frankston,17,12.2,57.6
+Frankston,18,6.6,57.6
+Frankston,19,2.6,57.6
+Frankston,20,1.6,57.6
+Frankston,21,1.5,57.6
+Frankston,22,1.5,57.6
+Frankston,23,0.8,57.6
+Frankston,24,0.2,57.6
+Frankston,25,0.0,57.6
+Frankston,26,0.0,57.6
+Frankston,27,0.0,57.6
+Glen Waverley,4,0.1,59.0
+Glen Waverley,5,0.5,59.0
+Glen Waverley,6,2.7,59.0
+Glen Waverley,7,10.0,59.0
+Glen Waverley,8,14.4,59.0
+Glen Waverley,9,5.4,59.0
+Glen Waverley,10,2.5,59.0
+Glen Waverley,11,2.4,59.0
+Glen Waverley,12,2.6,59.0
+Glen Waverley,13,4.2,59.0
+Glen Waverley,14,5.0,59.0
+Glen Waverley,15,9.0,59.0
+Glen Waverley,16,10.4,59.0
+Glen Waverley,17,15.2,59.0
+Glen Waverley,18,7.2,59.0
+Glen Waverley,19,2.1,59.0
+Glen Waverley,20,1.6,59.0
+Glen Waverley,21,1.8,59.0
+Glen Waverley,22,1.8,59.0
+Glen Waverley,23,1.1,59.0
+Glen Waverley,24,0.1,59.0
+Glen Waverley,25,0.0,59.0
+Glen Waverley,26,0.0,59.0
+Glen Waverley,27,0.0,59.0
+Hurstbridge,4,0.1,59.3
+Hurstbridge,5,0.6,59.3
+Hurstbridge,6,3.9,59.3
+Hurstbridge,7,14.4,59.3
+Hurstbridge,8,17.4,59.3
+Hurstbridge,9,6.0,59.3
+Hurstbridge,10,3.3,59.3
+Hurstbridge,11,3.9,59.3
+Hurstbridge,12,3.6,59.3
+Hurstbridge,13,3.3,59.3
+Hurstbridge,14,4.1,59.3
+Hurstbridge,15,6.5,59.3
+Hurstbridge,16,10.5,59.3
+Hurstbridge,17,10.5,59.3
+Hurstbridge,18,5.4,59.3
+Hurstbridge,19,2.1,59.3
+Hurstbridge,20,1.2,59.3
+Hurstbridge,21,1.2,59.3
+Hurstbridge,22,1.3,59.3
+Hurstbridge,23,0.6,59.3
+Hurstbridge,24,0.2,59.3
+Hurstbridge,25,0.0,59.3
+Hurstbridge,26,0.0,59.3
+Hurstbridge,27,0.0,59.3
+Lilydale,4,0.0,57.0
+Lilydale,5,0.6,57.0
+Lilydale,6,3.0,57.0
+Lilydale,7,10.0,57.0
+Lilydale,8,15.3,57.0
+Lilydale,9,6.4,57.0
+Lilydale,10,5.1,57.0
+Lilydale,11,4.4,57.0
+Lilydale,12,3.9,57.0
+Lilydale,13,3.2,57.0
+Lilydale,14,3.3,57.0
+Lilydale,15,9.3,57.0
+Lilydale,16,9.9,57.0
+Lilydale,17,12.5,57.0
+Lilydale,18,5.9,57.0
+Lilydale,19,2.3,57.0
+Lilydale,20,1.9,57.0
+Lilydale,21,1.6,57.0
+Lilydale,22,1.0,57.0
+Lilydale,23,0.5,57.0
+Lilydale,24,0.0,57.0
+Lilydale,25,0.0,57.0
+Lilydale,26,0.0,57.0
+Lilydale,27,0.0,57.0
+Mernda,4,0.1,55.9
+Mernda,5,1.0,55.9
+Mernda,6,4.2,55.9
+Mernda,7,12.3,55.9
+Mernda,8,16.7,55.9
+Mernda,9,7.1,55.9
+Mernda,10,3.6,55.9
+Mernda,11,3.4,55.9
+Mernda,12,3.5,55.9
+Mernda,13,3.6,55.9
+Mernda,14,4.0,55.9
+Mernda,15,7.2,55.9
+Mernda,16,8.6,55.9
+Mernda,17,11.2,55.9
+Mernda,18,5.8,55.9
+Mernda,19,2.3,55.9
+Mernda,20,1.1,55.9
+Mernda,21,1.4,55.9
+Mernda,22,1.7,55.9
+Mernda,23,0.9,55.9
+Mernda,24,0.2,55.9
+Mernda,25,0.0,55.9
+Mernda,26,0.0,55.9
+Mernda,27,0.0,55.9
+Pakenham,4,0.1,53.9
+Pakenham,5,1.0,53.9
+Pakenham,6,3.6,53.9
+Pakenham,7,10.0,53.9
+Pakenham,8,11.6,53.9
+Pakenham,9,5.3,53.9
+Pakenham,10,3.1,53.9
+Pakenham,11,3.3,53.9
+Pakenham,12,4.0,53.9
+Pakenham,13,4.3,53.9
+Pakenham,14,4.9,53.9
+Pakenham,15,7.5,53.9
+Pakenham,16,11.3,53.9
+Pakenham,17,13.5,53.9
+Pakenham,18,6.1,53.9
+Pakenham,19,2.8,53.9
+Pakenham,20,2.1,53.9
+Pakenham,21,1.7,53.9
+Pakenham,22,2.3,53.9
+Pakenham,23,1.2,53.9
+Pakenham,24,0.2,53.9
+Pakenham,25,0.0,53.9
+Pakenham,26,0.0,53.9
+Pakenham,27,0.0,53.9
+Richmond and City Loop,4,0.0,87.2
+Richmond and City Loop,5,0.0,87.2
+Richmond and City Loop,14,0.0,87.2
+Richmond and City Loop,15,19.0,87.2
+Richmond and City Loop,16,31.2,87.2
+Richmond and City Loop,17,37.0,87.2
+Richmond and City Loop,18,1.8,87.2
+Richmond and City Loop,20,1.0,87.2
+Richmond and City Loop,21,4.9,87.2
+Richmond and City Loop,22,2.3,87.2
+Richmond and City Loop,23,2.3,87.2
+Richmond and City Loop,24,0.4,87.2
+Sandringham,5,0.3,55.8
+Sandringham,6,2.7,55.8
+Sandringham,7,10.1,55.8
+Sandringham,8,15.5,55.8
+Sandringham,9,5.5,55.8
+Sandringham,10,3.4,55.8
+Sandringham,11,3.4,55.8
+Sandringham,12,3.5,55.8
+Sandringham,13,3.6,55.8
+Sandringham,14,4.3,55.8
+Sandringham,15,7.4,55.8
+Sandringham,16,8.8,55.8
+Sandringham,17,14.1,55.8
+Sandringham,18,7.3,55.8
+Sandringham,19,3.3,55.8
+Sandringham,20,2.2,55.8
+Sandringham,21,2.0,55.8
+Sandringham,22,1.9,55.8
+Sandringham,23,0.8,55.8
+Sandringham,24,0.1,55.8
+Sandringham,25,0.0,55.8
+Sandringham,26,0.0,55.8
+Sandringham,27,0.0,55.8
+Sunbury,4,0.1,54.6
+Sunbury,5,1.0,54.6
+Sunbury,6,4.0,54.6
+Sunbury,7,11.7,54.6
+Sunbury,8,12.7,54.6
+Sunbury,9,5.4,54.6
+Sunbury,10,3.8,54.6
+Sunbury,11,3.4,54.6
+Sunbury,12,3.4,54.6
+Sunbury,13,4.4,54.6
+Sunbury,14,5.4,54.6
+Sunbury,15,8.0,54.6
+Sunbury,16,10.5,54.6
+Sunbury,17,11.7,54.6
+Sunbury,18,6.0,54.6
+Sunbury,19,2.9,54.6
+Sunbury,20,1.6,54.6
+Sunbury,21,1.5,54.6
+Sunbury,22,1.7,54.6
+Sunbury,23,0.7,54.6
+Sunbury,24,0.2,54.6
+Sunbury,25,0.0,54.6
+Sunbury,26,0.0,54.6
+Sunbury,27,0.0,54.6
+Upfield,4,0.0,49.5
+Upfield,5,0.7,49.5
+Upfield,6,2.9,49.5
+Upfield,7,8.3,49.5
+Upfield,8,13.7,49.5
+Upfield,9,6.5,49.5
+Upfield,10,4.4,49.5
+Upfield,11,4.5,49.5
+Upfield,12,4.9,49.5
+Upfield,13,5.4,49.5
+Upfield,14,6.1,49.5
+Upfield,15,7.0,49.5
+Upfield,16,9.4,49.5
+Upfield,17,11.1,49.5
+Upfield,18,5.7,49.5
+Upfield,19,3.2,49.5
+Upfield,20,1.8,49.5
+Upfield,21,1.8,49.5
+Upfield,22,1.6,49.5
+Upfield,23,1.0,49.5
+Upfield,24,0.2,49.5
+Upfield,25,0.0,49.5
+Upfield,26,0.0,49.5
+Upfield,27,0.0,49.5
+Werribee,4,0.1,56.6
+Werribee,5,1.1,56.6
+Werribee,6,4.2,56.6
+Werribee,7,12.4,56.6
+Werribee,8,14.9,56.6
+Werribee,9,5.4,56.6
+Werribee,10,3.3,56.6
+Werribee,11,3.4,56.6
+Werribee,12,3.8,56.6
+Werribee,13,3.6,56.6
+Werribee,14,4.5,56.6
+Werribee,15,7.3,56.6
+Werribee,16,10.0,56.6
+Werribee,17,12.0,56.6
+Werribee,18,6.2,56.6
+Werribee,19,2.3,56.6
+Werribee,20,1.7,56.6
+Werribee,21,1.6,56.6
+Werribee,22,1.2,56.6
+Werribee,23,0.8,56.6
+Werribee,24,0.2,56.6
+Werribee,25,0.0,56.6
+Werribee,26,0.0,56.6
+Williamstown,4,0.0,56.9
+Williamstown,5,0.8,56.9
+Williamstown,6,3.6,56.9
+Williamstown,7,10.3,56.9
+Williamstown,8,14.7,56.9
+Williamstown,9,5.9,56.9
+Williamstown,10,4.2,56.9
+Williamstown,11,4.1,56.9
+Williamstown,12,3.8,56.9
+Williamstown,13,4.5,56.9
+Williamstown,14,5.2,56.9
+Williamstown,15,7.1,56.9
+Williamstown,16,10.9,56.9
+Williamstown,17,14.0,56.9
+Williamstown,18,6.3,56.9
+Williamstown,19,3.0,56.9
+Williamstown,20,1.1,56.9
+Williamstown,21,0.2,56.9
+Williamstown,22,0.3,56.9
+Williamstown,23,0.2,56.9
+Williamstown,24,0.0,56.9
+Williamstown,25,0.0,56.9
+Williamstown,26,0.0,56.9

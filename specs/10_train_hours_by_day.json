@@ -1,0 +1,214 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Lines: share of a day's Melbourne train loads by hour for each day type. Hours above 23 are after midnight.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Melbourne trains: share of a day's travel by hour, for each type of day",
+ "data": {
+  "url": "data/train_hourly_daytype.csv"
+ },
+ "width": "container",
+ "height": 320,
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "a": 7,
+      "b": 9
+     },
+     {
+      "a": 16,
+      "b": 18
+     }
+    ]
+   },
+   "mark": {
+    "type": "rect",
+    "color": "#8a8f98",
+    "opacity": 0.14
+   },
+   "encoding": {
+    "x": {
+     "field": "a",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       4,
+       27
+      ],
+      "nice": false
+     }
+    },
+    "x2": {
+     "field": "b"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 8,
+      "t": "Morning rush\n7 to 9 am"
+     },
+     {
+      "x": 17,
+      "t": "Evening rush\n4 to 6 pm"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontStyle": "italic",
+    "color": "#1f2933",
+    "lineBreak": "\n",
+    "baseline": "bottom"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       4,
+       27
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "datum": 17.5,
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "strokeWidth": 2.2
+   },
+   "encoding": {
+    "x": {
+     "field": "hour",
+     "type": "quantitative",
+     "title": "Hour of day (hour starting)",
+     "axis": {
+      "labelExpr": "datum.value % 24",
+      "values": [
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16,
+       18,
+       20,
+       22,
+       24,
+       26
+      ],
+      "labelAngle": 0
+     },
+     "scale": {
+      "domain": [
+       4,
+       27
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "share_pct",
+     "type": "quantitative",
+     "title": "Share of the day's train loads (%)",
+     "scale": {
+      "domain": [
+       0,
+       18
+      ],
+      "nice": false
+     }
+    },
+    "color": {
+     "field": "day",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Weekday",
+       "Weekday in school holidays",
+       "Saturday",
+       "Sunday",
+       "Public holiday"
+      ],
+      "range": [
+       "#1d4e89",
+       "#6aa6e8",
+       "#d9730d",
+       "#8e5bc4",
+       "#8a8f98"
+      ]
+     }
+    },
+    "strokeDash": {
+     "condition": {
+      "test": "datum.day == 'Public holiday'",
+      "value": [
+       5,
+       3
+      ]
+     },
+     "value": [
+      1,
+      0
+     ]
+    },
+    "tooltip": [
+     {
+      "field": "day",
+      "title": "Day type"
+     },
+     {
+      "field": "hour",
+      "title": "Hour starting"
+     },
+     {
+      "field": "share_pct",
+      "title": "Share of the day (%)"
+     }
+    ]
+   }
+  }
+ ]
+}

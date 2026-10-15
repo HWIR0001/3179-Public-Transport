@@ -1,0 +1,343 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Binless bivariate heatmap by line and hour: blue = share of the line's weekday travel, orange = passengers on board. Colour is computed in the spec; the key is generated from a sequence.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": {
+  "text": "Melbourne trains by line and hour: how busy the hour is and how crowded the trains are (weekdays)",
+  "subtitle": "Blue shows a bigger share of the line's weekday travel, orange shows more crowded trains, and dark slate grey means both. Blank cells have too few sampled trips."
+ },
+ "hconcat": [
+  {
+   "width": 480,
+   "height": 380,
+   "data": {
+    "url": "data/train_line_bivariate.csv"
+   },
+   "transform": [
+    {
+     "calculate": "toNumber(datum.hour)",
+     "as": "h"
+    },
+    {
+     "calculate": "sqrt(min(datum.share_pct, 12) / 12)",
+     "as": "tS"
+    },
+    {
+     "calculate": "sqrt(min(datum.load, 330) / 330)",
+     "as": "tL"
+    },
+    {
+     "calculate": "(datum.tS + datum.tL) == 0 ? 0.5 : datum.tL / (datum.tS + datum.tL)",
+     "as": "w0"
+    },
+    {
+     "calculate": "max(0, min(1, (datum.w0 - 0.3) / 0.4))",
+     "as": "u"
+    },
+    {
+     "calculate": "datum.u * datum.u * (3 - 2 * datum.u)",
+     "as": "w"
+    },
+    {
+     "calculate": "pow(max(datum.tS, datum.tL), 0.8)",
+     "as": "a"
+    },
+    {
+     "calculate": "min(datum.tS, datum.tL)",
+     "as": "m"
+    },
+    {
+     "calculate": "(247 + ((datum.w < 0.5 ? 33 * (1 - 2 * datum.w) + 52 * 2 * datum.w : 52 * (2 - 2 * datum.w) + 230 * (2 * datum.w - 1)) - 247) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "r"
+    },
+    {
+     "calculate": "(244 + ((datum.w < 0.5 ? 102 * (1 - 2 * datum.w) + 64 * 2 * datum.w : 64 * (2 - 2 * datum.w) + 100 * (2 * datum.w - 1)) - 244) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "g"
+    },
+    {
+     "calculate": "(239 + ((datum.w < 0.5 ? 172 * (1 - 2 * datum.w) + 88 * 2 * datum.w : 88 * (2 - 2 * datum.w) + 10 * (2 * datum.w - 1)) - 239) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "b"
+    },
+    {
+     "calculate": "'rgb(' + round(datum.r) + ',' + round(datum.g) + ',' + round(datum.b) + ')'",
+     "as": "col"
+    }
+   ],
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "h",
+     "type": "ordinal",
+     "title": "Hour of day (hour starting)",
+     "scale": {
+      "domain": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19,
+       20,
+       21,
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     "axis": {
+      "labelExpr": "datum.value % 24",
+      "values": [
+       4,
+       6,
+       8,
+       10,
+       12,
+       14,
+       16,
+       18,
+       20,
+       22,
+       24,
+       26
+      ],
+      "labelAngle": 0
+     }
+    },
+    "y": {
+     "field": "line",
+     "type": "nominal",
+     "title": null,
+     "sort": {
+      "field": "peak_share",
+      "op": "max",
+      "order": "descending"
+     }
+    },
+    "color": {
+     "field": "col",
+     "type": "nominal",
+     "scale": null,
+     "legend": null
+    },
+    "tooltip": [
+     {
+      "field": "line",
+      "title": "Line"
+     },
+     {
+      "field": "hour",
+      "title": "Hour starting"
+     },
+     {
+      "field": "share_pct",
+      "title": "Share of the line's weekday travel (%)"
+     },
+     {
+      "field": "load",
+      "title": "Average passengers on board"
+     },
+     {
+      "field": "n",
+      "title": "Sample trips"
+     }
+    ]
+   }
+  },
+  {
+   "title": {
+    "text": "Colour key",
+    "fontSize": 11
+   },
+   "width": 130,
+   "height": 130,
+   "data": {
+    "sequence": {
+     "start": 0,
+     "stop": 576,
+     "as": "i"
+    }
+   },
+   "transform": [
+    {
+     "calculate": "datum.i % 24",
+     "as": "ix"
+    },
+    {
+     "calculate": "floor(datum.i / 24)",
+     "as": "iy"
+    },
+    {
+     "calculate": "(datum.iy + 0.5) / 24",
+     "as": "tS"
+    },
+    {
+     "calculate": "(datum.ix + 0.5) / 24",
+     "as": "tL"
+    },
+    {
+     "calculate": "(datum.tS + datum.tL) == 0 ? 0.5 : datum.tL / (datum.tS + datum.tL)",
+     "as": "w0"
+    },
+    {
+     "calculate": "max(0, min(1, (datum.w0 - 0.3) / 0.4))",
+     "as": "u"
+    },
+    {
+     "calculate": "datum.u * datum.u * (3 - 2 * datum.u)",
+     "as": "w"
+    },
+    {
+     "calculate": "pow(max(datum.tS, datum.tL), 0.8)",
+     "as": "a"
+    },
+    {
+     "calculate": "min(datum.tS, datum.tL)",
+     "as": "m"
+    },
+    {
+     "calculate": "(247 + ((datum.w < 0.5 ? 33 * (1 - 2 * datum.w) + 52 * 2 * datum.w : 52 * (2 - 2 * datum.w) + 230 * (2 * datum.w - 1)) - 247) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "r"
+    },
+    {
+     "calculate": "(244 + ((datum.w < 0.5 ? 102 * (1 - 2 * datum.w) + 64 * 2 * datum.w : 64 * (2 - 2 * datum.w) + 100 * (2 * datum.w - 1)) - 244) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "g"
+    },
+    {
+     "calculate": "(239 + ((datum.w < 0.5 ? 172 * (1 - 2 * datum.w) + 88 * 2 * datum.w : 88 * (2 - 2 * datum.w) + 10 * (2 * datum.w - 1)) - 239) * datum.a) * (1 - 0.5 * datum.m)",
+     "as": "b"
+    },
+    {
+     "calculate": "'rgb(' + round(datum.r) + ',' + round(datum.g) + ',' + round(datum.b) + ')'",
+     "as": "col"
+    },
+    {
+     "calculate": "330 * pow(datum.ix / 24, 2)",
+     "as": "x0"
+    },
+    {
+     "calculate": "330 * pow((datum.ix + 1) / 24, 2)",
+     "as": "x1"
+    },
+    {
+     "calculate": "12 * pow(datum.iy / 24, 2)",
+     "as": "y0"
+    },
+    {
+     "calculate": "12 * pow((datum.iy + 1) / 24, 2)",
+     "as": "y1"
+    }
+   ],
+   "mark": {
+    "type": "rect"
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "title": [
+      "Passengers on board"
+     ],
+     "scale": {
+      "type": "sqrt",
+      "domain": [
+       0,
+       330
+      ],
+      "nice": false
+     },
+     "axis": {
+      "values": [
+       0,
+       50,
+       100,
+       200,
+       330
+      ],
+      "labelExpr": "datum.value == 330 ? '330+' : datum.value",
+      "labelAngle": 0
+     }
+    },
+    "x2": {
+     "field": "x1"
+    },
+    "y": {
+     "field": "y0",
+     "type": "quantitative",
+     "title": [
+      "Share of line's",
+      "weekday travel (%)"
+     ],
+     "scale": {
+      "type": "sqrt",
+      "domain": [
+       0,
+       12
+      ],
+      "nice": false
+     },
+     "axis": {
+      "values": [
+       0,
+       1,
+       3,
+       6,
+       12
+      ],
+      "labelExpr": "datum.value == 12 ? '12+' : datum.value"
+     }
+    },
+    "y2": {
+     "field": "y1"
+    },
+    "color": {
+     "field": "col",
+     "type": "nominal",
+     "scale": null,
+     "legend": null
+    }
+   }
+  }
+ ]
+}

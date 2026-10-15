@@ -1,0 +1,180 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Bars: estimated Melbourne station entries by train line; station entries are split across the lines serving them.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Melbourne: estimated train station entries by line, 2024-25 (millions)",
+ "data": {
+  "url": "data/melb_lines.csv"
+ },
+ "width": "container",
+ "height": 420,
+ "layer": [
+  {
+   "mark": "bar",
+   "encoding": {
+    "y": {
+     "field": "line",
+     "type": "nominal",
+     "title": null,
+     "sort": [
+      "Sunbury",
+      "Craigieburn",
+      "Upfield",
+      "Mernda",
+      "Hurstbridge",
+      "Lilydale",
+      "Belgrave",
+      "Alamein",
+      "Glen Waverley",
+      "Pakenham",
+      "Cranbourne",
+      "Frankston",
+      "Stony Point",
+      "Sandringham",
+      "Williamstown",
+      "Werribee",
+      "Richmond and City Loop",
+      "Flemington Racecourse"
+     ]
+    },
+    "x": {
+     "field": "entries_million",
+     "type": "quantitative",
+     "title": "Entries per year (millions)"
+    },
+    "color": {
+     "field": "kind",
+     "type": "nominal",
+     "title": null,
+     "scale": {
+      "domain": [
+       "Only this line",
+       "Shared with other lines"
+      ],
+      "range": [
+       "#1d4e89",
+       "#9db7d5"
+      ]
+     }
+    },
+    "order": {
+     "field": "kind",
+     "type": "nominal",
+     "sort": "descending"
+    },
+    "tooltip": [
+     {
+      "field": "line",
+      "title": "Line"
+     },
+     {
+      "field": "kind",
+      "title": "Stations"
+     },
+     {
+      "field": "entries_million",
+      "title": "Entries (millions)",
+      "format": ".1f"
+     }
+    ]
+   }
+  },
+  {
+   "transform": [
+    {
+     "joinaggregate": [
+      {
+       "op": "sum",
+       "field": "entries_million",
+       "as": "total"
+      }
+     ],
+     "groupby": [
+      "line"
+     ]
+    },
+    {
+     "window": [
+      {
+       "op": "row_number",
+       "as": "rn"
+      }
+     ],
+     "groupby": [
+      "line"
+     ]
+    },
+    {
+     "filter": "datum.rn == 1"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "fontSize": 11
+   },
+   "encoding": {
+    "y": {
+     "field": "line",
+     "type": "nominal",
+     "title": null,
+     "sort": [
+      "Sunbury",
+      "Craigieburn",
+      "Upfield",
+      "Mernda",
+      "Hurstbridge",
+      "Lilydale",
+      "Belgrave",
+      "Alamein",
+      "Glen Waverley",
+      "Pakenham",
+      "Cranbourne",
+      "Frankston",
+      "Stony Point",
+      "Sandringham",
+      "Williamstown",
+      "Werribee",
+      "Richmond and City Loop",
+      "Flemington Racecourse"
+     ]
+    },
+    "x": {
+     "field": "total",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "total",
+     "type": "quantitative",
+     "format": ".1f"
+    }
+   }
+  }
+ ]
+}

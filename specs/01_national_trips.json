@@ -1,0 +1,539 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Streamgraph of yearly trips by mode, all eight capitals. Bus sits under train so the share shift is visible; labels give 1977-2025 shares.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": {
+  "text": "Trips on city public transport, all eight capitals",
+  "subtitle": "Bus share fell from 54% to 42% of trips while train rose from 35% to 43% (1977 to 2025)"
+ },
+ "data": {
+  "url": "data/national_mode_share.csv"
+ },
+ "width": "container",
+ "height": 300,
+ "transform": [
+  {
+   "calculate": "datum.mode == 'Heavy rail' || datum.mode == 'Train' || datum.mode == 'Metro' ? 'Train' : datum.mode == 'Light rail' || datum.mode == 'Tram' ? 'Tram / light rail' : datum.mode",
+   "as": "mode"
+  },
+  {
+   "calculate": "datum.mode == 'Bus' ? 0 : datum.mode == 'Train' ? 1 : datum.mode == 'Tram / light rail' ? 2 : 3",
+   "as": "ord"
+  }
+ ],
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "a": 2019.5,
+      "b": 2022.5
+     }
+    ]
+   },
+   "mark": {
+    "type": "rect",
+    "color": "#8a8f98",
+    "opacity": 0.15
+   },
+   "encoding": {
+    "x": {
+     "field": "a",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "x2": {
+     "field": "b"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "opacity": 0.92
+   },
+   "encoding": {
+    "x": {
+     "field": "year_end",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     },
+     "title": "Year ending 30 June",
+     "axis": {
+      "format": "d",
+      "tickMinStep": 5
+     }
+    },
+    "y": {
+     "field": "trips_million",
+     "stack": "center",
+     "axis": null,
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1900
+      ],
+      "nice": false
+     }
+    },
+    "color": {
+     "field": "mode",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Bus",
+       "Train",
+       "Tram / light rail",
+       "Ferry"
+      ],
+      "range": [
+       "#d9730d",
+       "#1d4e89",
+       "#17a398",
+       "#8e5bc4"
+      ]
+     },
+     "title": "Mode"
+    },
+    "order": {
+     "field": "ord",
+     "type": "quantitative"
+    },
+    "tooltip": [
+     {
+      "field": "fy",
+      "title": "Year"
+     },
+     {
+      "field": "mode"
+     },
+     {
+      "field": "trips_million",
+      "title": "Trips (millions)"
+     },
+     {
+      "field": "share_pct",
+      "title": "Share of trips (%)"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1977,
+      "y": 646.5,
+      "t": "Bus\n54%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1977,
+      "y": 1109.0,
+      "t": "Train\n35%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1995,
+      "y": 614.0500000000001,
+      "t": "Bus\n51%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 1995,
+      "y": 1111.9,
+      "t": "Train\n38%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 442.65,
+      "t": "Bus\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 1117.5,
+      "t": "Train\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2025,
+      "y": 424.6000000000001,
+      "t": "Bus\n42%",
+      "al": "right",
+      "dx": -5
+     },
+     {
+      "x": 2025,
+      "y": 1100.6000000000001,
+      "t": "Train\n43%",
+      "al": "right",
+      "dx": -5
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.al == 'left'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#ffffff",
+    "lineBreak": "\n",
+    "align": "left",
+    "dx": 5
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1900
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1977,
+      "y": 646.5,
+      "t": "Bus\n54%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1977,
+      "y": 1109.0,
+      "t": "Train\n35%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1995,
+      "y": 614.0500000000001,
+      "t": "Bus\n51%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 1995,
+      "y": 1111.9,
+      "t": "Train\n38%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 442.65,
+      "t": "Bus\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 1117.5,
+      "t": "Train\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2025,
+      "y": 424.6000000000001,
+      "t": "Bus\n42%",
+      "al": "right",
+      "dx": -5
+     },
+     {
+      "x": 2025,
+      "y": 1100.6000000000001,
+      "t": "Train\n43%",
+      "al": "right",
+      "dx": -5
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.al == 'center'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#ffffff",
+    "lineBreak": "\n",
+    "align": "center",
+    "dx": 0
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1900
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1977,
+      "y": 646.5,
+      "t": "Bus\n54%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1977,
+      "y": 1109.0,
+      "t": "Train\n35%",
+      "al": "left",
+      "dx": 5
+     },
+     {
+      "x": 1995,
+      "y": 614.0500000000001,
+      "t": "Bus\n51%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 1995,
+      "y": 1111.9,
+      "t": "Train\n38%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 442.65,
+      "t": "Bus\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2013,
+      "y": 1117.5,
+      "t": "Train\n43%",
+      "al": "center",
+      "dx": 0
+     },
+     {
+      "x": 2025,
+      "y": 424.6000000000001,
+      "t": "Bus\n42%",
+      "al": "right",
+      "dx": -5
+     },
+     {
+      "x": 2025,
+      "y": 1100.6000000000001,
+      "t": "Train\n43%",
+      "al": "right",
+      "dx": -5
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.al == 'right'"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#ffffff",
+    "lineBreak": "\n",
+    "align": "right",
+    "dx": -5
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1900
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 1977,
+      "y": 1484.25,
+      "t": "1.05 billion trips in 1976-77",
+      "al": "left"
+     },
+     {
+      "x": 2019,
+      "y": 1849.7,
+      "t": "1.78 billion in 2018-19",
+      "al": "right"
+     },
+     {
+      "x": 2025,
+      "y": 1760.15,
+      "t": "1.60 billion in 2024-25",
+      "al": "right"
+     },
+     {
+      "x": 2021,
+      "y": 1430.7,
+      "t": "COVID-19 years",
+      "al": "center"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontStyle": "italic",
+    "color": "#1f2933",
+    "align": "left"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1977,
+       2025
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1900
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  }
+ ]
+}

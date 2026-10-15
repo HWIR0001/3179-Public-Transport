@@ -1,0 +1,988 @@
+city,fy,year_end,mode,trips_million
+Adelaide,1976-77,1977,Bus,57.2
+Adelaide,1977-78,1978,Bus,56.3
+Adelaide,1978-79,1979,Bus,56.8
+Adelaide,1979-80,1980,Bus,57.6
+Adelaide,1980-81,1981,Bus,62.5
+Adelaide,1981-82,1982,Bus,63.3
+Adelaide,1982-83,1983,Bus,55.3
+Adelaide,1983-84,1984,Bus,55.5
+Adelaide,1984-85,1985,Bus,52.9
+Adelaide,1985-86,1986,Bus,53.5
+Adelaide,1986-87,1987,Bus,52.4
+Adelaide,1987-88,1988,Bus,53.7
+Adelaide,1988-89,1989,Bus,49.8
+Adelaide,1989-90,1990,Bus,51.1
+Adelaide,1990-91,1991,Bus,54.3
+Adelaide,1991-92,1992,Bus,53.3
+Adelaide,1992-93,1993,Bus,49.8
+Adelaide,1993-94,1994,Bus,48.9
+Adelaide,1994-95,1995,Bus,49.6
+Adelaide,1995-96,1996,Bus,48.2
+Adelaide,1996-97,1997,Bus,47.5
+Adelaide,1997-98,1998,Bus,46.9
+Adelaide,1998-99,1999,Bus,44.0
+Adelaide,1999-00,2000,Bus,43.0
+Adelaide,2000-01,2001,Bus,44.8
+Adelaide,2001-02,2002,Bus,46.2
+Adelaide,2002-03,2003,Bus,47.1
+Adelaide,2003-04,2004,Bus,46.5
+Adelaide,2004-05,2005,Bus,47.5
+Adelaide,2005-06,2006,Bus,49.6
+Adelaide,2006-07,2007,Bus,50.6
+Adelaide,2007-08,2008,Bus,51.6
+Adelaide,2008-09,2009,Bus,52.7
+Adelaide,2009-10,2010,Bus,53.6
+Adelaide,2010-11,2011,Bus,52.0
+Adelaide,2011-12,2012,Bus,51.0
+Adelaide,2012-13,2013,Bus,50.4
+Adelaide,2013-14,2014,Bus,51.1
+Adelaide,2014-15,2015,Bus,51.8
+Adelaide,2015-16,2016,Bus,51.4
+Adelaide,2016-17,2017,Bus,51.1
+Adelaide,2017-18,2018,Bus,51.1
+Adelaide,2018-19,2019,Bus,51.1
+Adelaide,2019-20,2020,Bus,42.9
+Adelaide,2020-21,2021,Bus,36.9
+Adelaide,2021-22,2022,Bus,34.2
+Adelaide,2022-23,2023,Bus,40.5
+Adelaide,2023-24,2024,Bus,46.4
+Adelaide,2024-25,2025,Bus,45.9
+Adelaide,1976-77,1977,Heavy rail,12.2
+Adelaide,1977-78,1978,Heavy rail,11.9
+Adelaide,1978-79,1979,Heavy rail,11.6
+Adelaide,1979-80,1980,Heavy rail,13.1
+Adelaide,1980-81,1981,Heavy rail,13.8
+Adelaide,1981-82,1982,Heavy rail,14.7
+Adelaide,1982-83,1983,Heavy rail,12.9
+Adelaide,1983-84,1984,Heavy rail,12.4
+Adelaide,1984-85,1985,Heavy rail,11.8
+Adelaide,1985-86,1986,Heavy rail,12.8
+Adelaide,1986-87,1987,Heavy rail,12.5
+Adelaide,1987-88,1988,Heavy rail,9.5
+Adelaide,1988-89,1989,Heavy rail,10.1
+Adelaide,1989-90,1990,Heavy rail,10.0
+Adelaide,1990-91,1991,Heavy rail,8.9
+Adelaide,1991-92,1992,Heavy rail,8.4
+Adelaide,1992-93,1993,Heavy rail,9.1
+Adelaide,1993-94,1994,Heavy rail,10.5
+Adelaide,1994-95,1995,Heavy rail,10.9
+Adelaide,1995-96,1996,Heavy rail,10.8
+Adelaide,1996-97,1997,Heavy rail,10.7
+Adelaide,1997-98,1998,Heavy rail,10.5
+Adelaide,1998-99,1999,Heavy rail,10.3
+Adelaide,1999-00,2000,Heavy rail,10.3
+Adelaide,2000-01,2001,Heavy rail,10.2
+Adelaide,2001-02,2002,Heavy rail,10.5
+Adelaide,2002-03,2003,Heavy rail,11.0
+Adelaide,2003-04,2004,Heavy rail,11.3
+Adelaide,2004-05,2005,Heavy rail,11.3
+Adelaide,2005-06,2006,Heavy rail,11.9
+Adelaide,2006-07,2007,Heavy rail,11.8
+Adelaide,2007-08,2008,Heavy rail,11.8
+Adelaide,2008-09,2009,Heavy rail,12.1
+Adelaide,2009-10,2010,Heavy rail,11.8
+Adelaide,2010-11,2011,Heavy rail,10.7
+Adelaide,2011-12,2012,Heavy rail,9.6
+Adelaide,2012-13,2013,Heavy rail,10.0
+Adelaide,2013-14,2014,Heavy rail,10.5
+Adelaide,2014-15,2015,Heavy rail,13.6
+Adelaide,2015-16,2016,Heavy rail,14.2
+Adelaide,2016-17,2017,Heavy rail,14.4
+Adelaide,2017-18,2018,Heavy rail,14.5
+Adelaide,2018-19,2019,Heavy rail,15.7
+Adelaide,2019-20,2020,Heavy rail,13.3
+Adelaide,2020-21,2021,Heavy rail,9.1
+Adelaide,2021-22,2022,Heavy rail,7.8
+Adelaide,2022-23,2023,Heavy rail,12.1
+Adelaide,2023-24,2024,Heavy rail,12.4
+Adelaide,2024-25,2025,Heavy rail,14.6
+Adelaide,1976-77,1977,Light rail,1.3
+Adelaide,1977-78,1978,Light rail,1.3
+Adelaide,1978-79,1979,Light rail,2.0
+Adelaide,1979-80,1980,Light rail,3.0
+Adelaide,1980-81,1981,Light rail,2.9
+Adelaide,1981-82,1982,Light rail,2.9
+Adelaide,1982-83,1983,Light rail,2.8
+Adelaide,1983-84,1984,Light rail,2.8
+Adelaide,1984-85,1985,Light rail,2.7
+Adelaide,1985-86,1986,Light rail,2.6
+Adelaide,1986-87,1987,Light rail,2.6
+Adelaide,1987-88,1988,Light rail,2.4
+Adelaide,1988-89,1989,Light rail,2.7
+Adelaide,1989-90,1990,Light rail,2.2
+Adelaide,1990-91,1991,Light rail,2.2
+Adelaide,1991-92,1992,Light rail,2.1
+Adelaide,1992-93,1993,Light rail,1.8
+Adelaide,1993-94,1994,Light rail,1.8
+Adelaide,1994-95,1995,Light rail,2.0
+Adelaide,1995-96,1996,Light rail,1.9
+Adelaide,1996-97,1997,Light rail,1.9
+Adelaide,1997-98,1998,Light rail,1.9
+Adelaide,1998-99,1999,Light rail,1.9
+Adelaide,1999-00,2000,Light rail,1.9
+Adelaide,2000-01,2001,Light rail,2.0
+Adelaide,2001-02,2002,Light rail,2.0
+Adelaide,2002-03,2003,Light rail,2.0
+Adelaide,2003-04,2004,Light rail,2.2
+Adelaide,2004-05,2005,Light rail,2.1
+Adelaide,2005-06,2006,Light rail,2.1
+Adelaide,2006-07,2007,Light rail,2.4
+Adelaide,2007-08,2008,Light rail,3.0
+Adelaide,2008-09,2009,Light rail,3.3
+Adelaide,2009-10,2010,Light rail,3.9
+Adelaide,2010-11,2011,Light rail,4.7
+Adelaide,2011-12,2012,Light rail,5.7
+Adelaide,2012-13,2013,Light rail,7.1
+Adelaide,2013-14,2014,Light rail,9.2
+Adelaide,2014-15,2015,Light rail,9.3
+Adelaide,2015-16,2016,Light rail,9.3
+Adelaide,2016-17,2017,Light rail,9.3
+Adelaide,2017-18,2018,Light rail,9.5
+Adelaide,2018-19,2019,Light rail,9.4
+Adelaide,2019-20,2020,Light rail,7.4
+Adelaide,2020-21,2021,Light rail,6.0
+Adelaide,2021-22,2022,Light rail,5.5
+Adelaide,2022-23,2023,Light rail,7.5
+Adelaide,2023-24,2024,Light rail,8.9
+Adelaide,2024-25,2025,Light rail,9.0
+Brisbane,1976-77,1977,Bus,61.5
+Brisbane,1977-78,1978,Bus,62.6
+Brisbane,1978-79,1979,Bus,61.4
+Brisbane,1979-80,1980,Bus,59.9
+Brisbane,1980-81,1981,Bus,54.6
+Brisbane,1981-82,1982,Bus,56.1
+Brisbane,1982-83,1983,Bus,56.5
+Brisbane,1983-84,1984,Bus,53.3
+Brisbane,1984-85,1985,Bus,53.1
+Brisbane,1985-86,1986,Bus,52.0
+Brisbane,1986-87,1987,Bus,52.7
+Brisbane,1987-88,1988,Bus,54.9
+Brisbane,1988-89,1989,Bus,59.4
+Brisbane,1989-90,1990,Bus,56.0
+Brisbane,1990-91,1991,Bus,57.8
+Brisbane,1991-92,1992,Bus,60.5
+Brisbane,1992-93,1993,Bus,58.3
+Brisbane,1993-94,1994,Bus,58.7
+Brisbane,1994-95,1995,Bus,64.7
+Brisbane,1995-96,1996,Bus,60.5
+Brisbane,1996-97,1997,Bus,59.5
+Brisbane,1997-98,1998,Bus,57.4
+Brisbane,1998-99,1999,Bus,49.3
+Brisbane,1999-00,2000,Bus,52.6
+Brisbane,2000-01,2001,Bus,51.8
+Brisbane,2001-02,2002,Bus,53.7
+Brisbane,2002-03,2003,Bus,55.7
+Brisbane,2003-04,2004,Bus,59.0
+Brisbane,2004-05,2005,Bus,65.0
+Brisbane,2005-06,2006,Bus,72.6
+Brisbane,2006-07,2007,Bus,77.1
+Brisbane,2007-08,2008,Bus,81.9
+Brisbane,2008-09,2009,Bus,88.0
+Brisbane,2009-10,2010,Bus,93.1
+Brisbane,2010-11,2011,Bus,94.9
+Brisbane,2011-12,2012,Bus,98.0
+Brisbane,2012-13,2013,Bus,96.3
+Brisbane,2013-14,2014,Bus,94.8
+Brisbane,2014-15,2015,Bus,93.7
+Brisbane,2015-16,2016,Bus,94.5
+Brisbane,2016-17,2017,Bus,92.6
+Brisbane,2017-18,2018,Bus,94.1
+Brisbane,2018-19,2019,Bus,97.7
+Brisbane,2019-20,2020,Bus,78.5
+Brisbane,2020-21,2021,Bus,61.8
+Brisbane,2021-22,2022,Bus,58.5
+Brisbane,2022-23,2023,Bus,78.6
+Brisbane,2023-24,2024,Bus,88.0
+Brisbane,2024-25,2025,Bus,98.9
+Brisbane,1976-77,1977,Ferry,1.4
+Brisbane,1977-78,1978,Ferry,1.3
+Brisbane,1978-79,1979,Ferry,1.3
+Brisbane,1979-80,1980,Ferry,1.4
+Brisbane,1980-81,1981,Ferry,1.4
+Brisbane,1981-82,1982,Ferry,1.4
+Brisbane,1982-83,1983,Ferry,1.5
+Brisbane,1983-84,1984,Ferry,1.3
+Brisbane,1984-85,1985,Ferry,1.0
+Brisbane,1985-86,1986,Ferry,1.1
+Brisbane,1986-87,1987,Ferry,1.2
+Brisbane,1987-88,1988,Ferry,1.3
+Brisbane,1988-89,1989,Ferry,1.2
+Brisbane,1989-90,1990,Ferry,1.1
+Brisbane,1990-91,1991,Ferry,1.1
+Brisbane,1991-92,1992,Ferry,1.2
+Brisbane,1992-93,1993,Ferry,1.4
+Brisbane,1993-94,1994,Ferry,1.6
+Brisbane,1994-95,1995,Ferry,1.8
+Brisbane,1995-96,1996,Ferry,2.2
+Brisbane,1996-97,1997,Ferry,2.5
+Brisbane,1997-98,1998,Ferry,2.9
+Brisbane,1998-99,1999,Ferry,3.2
+Brisbane,1999-00,2000,Ferry,3.4
+Brisbane,2000-01,2001,Ferry,3.6
+Brisbane,2001-02,2002,Ferry,3.5
+Brisbane,2002-03,2003,Ferry,3.5
+Brisbane,2003-04,2004,Ferry,4.0
+Brisbane,2004-05,2005,Ferry,5.2
+Brisbane,2005-06,2006,Ferry,5.7
+Brisbane,2006-07,2007,Ferry,6.0
+Brisbane,2007-08,2008,Ferry,6.1
+Brisbane,2008-09,2009,Ferry,6.4
+Brisbane,2009-10,2010,Ferry,6.3
+Brisbane,2010-11,2011,Ferry,4.3
+Brisbane,2011-12,2012,Ferry,5.3
+Brisbane,2012-13,2013,Ferry,5.9
+Brisbane,2013-14,2014,Ferry,6.2
+Brisbane,2014-15,2015,Ferry,6.4
+Brisbane,2015-16,2016,Ferry,7.0
+Brisbane,2016-17,2017,Ferry,6.7
+Brisbane,2017-18,2018,Ferry,6.9
+Brisbane,2018-19,2019,Ferry,6.6
+Brisbane,2019-20,2020,Ferry,5.2
+Brisbane,2020-21,2021,Ferry,3.9
+Brisbane,2021-22,2022,Ferry,3.2
+Brisbane,2022-23,2023,Ferry,4.2
+Brisbane,2023-24,2024,Ferry,5.6
+Brisbane,2024-25,2025,Ferry,7.4
+Brisbane,1976-77,1977,Heavy rail,29.3
+Brisbane,1977-78,1978,Heavy rail,27.5
+Brisbane,1978-79,1979,Heavy rail,25.8
+Brisbane,1979-80,1980,Heavy rail,28.0
+Brisbane,1980-81,1981,Heavy rail,30.3
+Brisbane,1981-82,1982,Heavy rail,32.4
+Brisbane,1982-83,1983,Heavy rail,33.1
+Brisbane,1983-84,1984,Heavy rail,35.8
+Brisbane,1984-85,1985,Heavy rail,37.4
+Brisbane,1985-86,1986,Heavy rail,40.3
+Brisbane,1986-87,1987,Heavy rail,43.0
+Brisbane,1987-88,1988,Heavy rail,45.0
+Brisbane,1988-89,1989,Heavy rail,49.4
+Brisbane,1989-90,1990,Heavy rail,43.3
+Brisbane,1990-91,1991,Heavy rail,42.1
+Brisbane,1991-92,1992,Heavy rail,40.1
+Brisbane,1992-93,1993,Heavy rail,39.4
+Brisbane,1993-94,1994,Heavy rail,38.4
+Brisbane,1994-95,1995,Heavy rail,37.0
+Brisbane,1995-96,1996,Heavy rail,39.2
+Brisbane,1996-97,1997,Heavy rail,41.5
+Brisbane,1997-98,1998,Heavy rail,41.5
+Brisbane,1998-99,1999,Heavy rail,41.0
+Brisbane,1999-00,2000,Heavy rail,42.2
+Brisbane,2000-01,2001,Heavy rail,44.2
+Brisbane,2001-02,2002,Heavy rail,45.0
+Brisbane,2002-03,2003,Heavy rail,45.7
+Brisbane,2003-04,2004,Heavy rail,47.1
+Brisbane,2004-05,2005,Heavy rail,47.2
+Brisbane,2005-06,2006,Heavy rail,50.2
+Brisbane,2006-07,2007,Heavy rail,52.0
+Brisbane,2007-08,2008,Heavy rail,53.6
+Brisbane,2008-09,2009,Heavy rail,57.6
+Brisbane,2009-10,2010,Heavy rail,55.3
+Brisbane,2010-11,2011,Heavy rail,54.1
+Brisbane,2011-12,2012,Heavy rail,54.0
+Brisbane,2012-13,2013,Heavy rail,51.9
+Brisbane,2013-14,2014,Heavy rail,51.8
+Brisbane,2014-15,2015,Heavy rail,52.4
+Brisbane,2015-16,2016,Heavy rail,53.1
+Brisbane,2016-17,2017,Heavy rail,53.1
+Brisbane,2017-18,2018,Heavy rail,54.8
+Brisbane,2018-19,2019,Heavy rail,57.1
+Brisbane,2019-20,2020,Heavy rail,45.3
+Brisbane,2020-21,2021,Heavy rail,33.4
+Brisbane,2021-22,2022,Heavy rail,32.4
+Brisbane,2022-23,2023,Heavy rail,43.8
+Brisbane,2023-24,2024,Heavy rail,47.5
+Brisbane,2024-25,2025,Heavy rail,55.4
+Canberra,1976-77,1977,Bus,14.4
+Canberra,1977-78,1978,Bus,14.6
+Canberra,1978-79,1979,Bus,16.4
+Canberra,1979-80,1980,Bus,18.7
+Canberra,1980-81,1981,Bus,18.0
+Canberra,1981-82,1982,Bus,17.2
+Canberra,1982-83,1983,Bus,20.4
+Canberra,1983-84,1984,Bus,22.9
+Canberra,1984-85,1985,Bus,24.0
+Canberra,1985-86,1986,Bus,23.1
+Canberra,1986-87,1987,Bus,24.1
+Canberra,1987-88,1988,Bus,24.8
+Canberra,1988-89,1989,Bus,24.6
+Canberra,1989-90,1990,Bus,25.1
+Canberra,1990-91,1991,Bus,25.0
+Canberra,1991-92,1992,Bus,24.4
+Canberra,1992-93,1993,Bus,23.7
+Canberra,1993-94,1994,Bus,23.1
+Canberra,1994-95,1995,Bus,24.0
+Canberra,1995-96,1996,Bus,24.0
+Canberra,1996-97,1997,Bus,24.1
+Canberra,1997-98,1998,Bus,23.2
+Canberra,1998-99,1999,Bus,21.6
+Canberra,1999-00,2000,Bus,21.3
+Canberra,2000-01,2001,Bus,20.6
+Canberra,2001-02,2002,Bus,20.5
+Canberra,2002-03,2003,Bus,21.0
+Canberra,2003-04,2004,Bus,20.7
+Canberra,2004-05,2005,Bus,20.4
+Canberra,2005-06,2006,Bus,21.1
+Canberra,2006-07,2007,Bus,20.8
+Canberra,2007-08,2008,Bus,20.8
+Canberra,2008-09,2009,Bus,20.8
+Canberra,2009-10,2010,Bus,19.4
+Canberra,2010-11,2011,Bus,18.8
+Canberra,2011-12,2012,Bus,18.8
+Canberra,2012-13,2013,Bus,18.8
+Canberra,2013-14,2014,Bus,18.4
+Canberra,2014-15,2015,Bus,18.2
+Canberra,2015-16,2016,Bus,18.3
+Canberra,2016-17,2017,Bus,18.8
+Canberra,2017-18,2018,Bus,19.4
+Canberra,2018-19,2019,Bus,19.7
+Canberra,2019-20,2020,Bus,14.9
+Canberra,2020-21,2021,Bus,12.5
+Canberra,2021-22,2022,Bus,9.9
+Canberra,2022-23,2023,Bus,14.4
+Canberra,2023-24,2024,Bus,16.1
+Canberra,2024-25,2025,Bus,16.4
+Canberra,2018-19,2019,Light rail,0.9
+Canberra,2019-20,2020,Light rail,3.7
+Canberra,2020-21,2021,Light rail,3.0
+Canberra,2021-22,2022,Light rail,2.4
+Canberra,2022-23,2023,Light rail,3.8
+Canberra,2023-24,2024,Light rail,4.3
+Canberra,2024-25,2025,Light rail,4.2
+Darwin,1976-77,1977,Bus,0.7
+Darwin,1977-78,1978,Bus,0.7
+Darwin,1978-79,1979,Bus,0.8
+Darwin,1979-80,1980,Bus,1.2
+Darwin,1980-81,1981,Bus,1.6
+Darwin,1981-82,1982,Bus,1.8
+Darwin,1982-83,1983,Bus,2.1
+Darwin,1983-84,1984,Bus,2.1
+Darwin,1984-85,1985,Bus,2.1
+Darwin,1985-86,1986,Bus,2.2
+Darwin,1986-87,1987,Bus,1.9
+Darwin,1987-88,1988,Bus,2.4
+Darwin,1988-89,1989,Bus,3.0
+Darwin,1989-90,1990,Bus,2.9
+Darwin,1990-91,1991,Bus,3.2
+Darwin,1991-92,1992,Bus,3.2
+Darwin,1992-93,1993,Bus,3.0
+Darwin,1993-94,1994,Bus,3.1
+Darwin,1994-95,1995,Bus,3.3
+Darwin,1995-96,1996,Bus,3.7
+Darwin,1996-97,1997,Bus,3.6
+Darwin,1997-98,1998,Bus,3.6
+Darwin,1998-99,1999,Bus,3.5
+Darwin,1999-00,2000,Bus,3.5
+Darwin,2000-01,2001,Bus,3.6
+Darwin,2001-02,2002,Bus,3.7
+Darwin,2002-03,2003,Bus,3.9
+Darwin,2003-04,2004,Bus,3.9
+Darwin,2004-05,2005,Bus,4.0
+Darwin,2005-06,2006,Bus,4.1
+Darwin,2006-07,2007,Bus,4.2
+Darwin,2007-08,2008,Bus,4.3
+Darwin,2008-09,2009,Bus,4.5
+Darwin,2009-10,2010,Bus,4.8
+Darwin,2010-11,2011,Bus,4.9
+Darwin,2011-12,2012,Bus,5.0
+Darwin,2012-13,2013,Bus,5.2
+Darwin,2013-14,2014,Bus,5.3
+Darwin,2014-15,2015,Bus,5.4
+Darwin,2015-16,2016,Bus,5.5
+Darwin,2016-17,2017,Bus,5.6
+Darwin,2017-18,2018,Bus,5.7
+Darwin,2018-19,2019,Bus,5.6
+Darwin,2019-20,2020,Bus,5.1
+Darwin,2020-21,2021,Bus,4.4
+Darwin,2021-22,2022,Bus,4.4
+Darwin,2022-23,2023,Bus,4.5
+Darwin,2023-24,2024,Bus,4.6
+Darwin,2024-25,2025,Bus,4.6
+Hobart,1976-77,1977,Bus,15.3
+Hobart,1977-78,1978,Bus,14.9
+Hobart,1978-79,1979,Bus,13.4
+Hobart,1979-80,1980,Bus,13.3
+Hobart,1980-81,1981,Bus,13.2
+Hobart,1981-82,1982,Bus,10.9
+Hobart,1982-83,1983,Bus,10.4
+Hobart,1983-84,1984,Bus,11.2
+Hobart,1984-85,1985,Bus,11.2
+Hobart,1985-86,1986,Bus,11.2
+Hobart,1986-87,1987,Bus,11.1
+Hobart,1987-88,1988,Bus,10.4
+Hobart,1988-89,1989,Bus,9.6
+Hobart,1989-90,1990,Bus,10.0
+Hobart,1990-91,1991,Bus,9.5
+Hobart,1991-92,1992,Bus,9.6
+Hobart,1992-93,1993,Bus,9.5
+Hobart,1993-94,1994,Bus,9.3
+Hobart,1994-95,1995,Bus,9.3
+Hobart,1995-96,1996,Bus,9.1
+Hobart,1996-97,1997,Bus,8.4
+Hobart,1997-98,1998,Bus,7.8
+Hobart,1998-99,1999,Bus,7.6
+Hobart,1999-00,2000,Bus,7.5
+Hobart,2000-01,2001,Bus,7.6
+Hobart,2001-02,2002,Bus,7.6
+Hobart,2002-03,2003,Bus,7.6
+Hobart,2003-04,2004,Bus,7.7
+Hobart,2004-05,2005,Bus,7.6
+Hobart,2005-06,2006,Bus,7.6
+Hobart,2006-07,2007,Bus,7.7
+Hobart,2007-08,2008,Bus,7.4
+Hobart,2008-09,2009,Bus,7.7
+Hobart,2009-10,2010,Bus,7.8
+Hobart,2010-11,2011,Bus,8.1
+Hobart,2011-12,2012,Bus,8.0
+Hobart,2012-13,2013,Bus,7.8
+Hobart,2013-14,2014,Bus,7.9
+Hobart,2014-15,2015,Bus,8.0
+Hobart,2015-16,2016,Bus,7.7
+Hobart,2016-17,2017,Bus,7.7
+Hobart,2017-18,2018,Bus,7.9
+Hobart,2018-19,2019,Bus,8.0
+Hobart,2019-20,2020,Bus,6.8
+Hobart,2020-21,2021,Bus,6.5
+Hobart,2021-22,2022,Bus,6.5
+Hobart,2022-23,2023,Bus,6.5
+Hobart,2023-24,2024,Bus,6.3
+Hobart,2024-25,2025,Bus,6.5
+Hobart,1976-77,1977,Ferry,7.0
+Hobart,1977-78,1978,Ferry,3.5
+Hobart,1978-79,1979,Ferry,1.8
+Hobart,1979-80,1980,Ferry,0.6
+Hobart,1980-81,1981,Ferry,0.2
+Hobart,1981-82,1982,Ferry,0.1
+Hobart,1982-83,1983,Ferry,0.1
+Hobart,1983-84,1984,Ferry,0.1
+Hobart,1984-85,1985,Ferry,0.1
+Hobart,1985-86,1986,Ferry,0.1
+Hobart,1986-87,1987,Ferry,0.1
+Hobart,1987-88,1988,Ferry,0.1
+Hobart,1988-89,1989,Ferry,0.0
+Hobart,1989-90,1990,Ferry,0.0
+Hobart,1990-91,1991,Ferry,0.0
+Hobart,1991-92,1992,Ferry,0.0
+Hobart,1992-93,1993,Ferry,0.0
+Hobart,1993-94,1994,Ferry,0.0
+Hobart,1994-95,1995,Ferry,0.0
+Hobart,1995-96,1996,Ferry,0.0
+Hobart,1996-97,1997,Ferry,0.0
+Hobart,1997-98,1998,Ferry,0.0
+Hobart,1998-99,1999,Ferry,0.0
+Hobart,1999-00,2000,Ferry,0.0
+Hobart,2000-01,2001,Ferry,0.0
+Hobart,2001-02,2002,Ferry,0.0
+Hobart,2002-03,2003,Ferry,0.0
+Hobart,2003-04,2004,Ferry,0.0
+Hobart,2004-05,2005,Ferry,0.0
+Hobart,2005-06,2006,Ferry,0.0
+Hobart,2006-07,2007,Ferry,0.0
+Hobart,2007-08,2008,Ferry,0.1
+Hobart,2008-09,2009,Ferry,0.1
+Hobart,2009-10,2010,Ferry,0.1
+Hobart,2010-11,2011,Ferry,0.1
+Hobart,2011-12,2012,Ferry,0.1
+Hobart,2012-13,2013,Ferry,0.1
+Hobart,2013-14,2014,Ferry,0.1
+Hobart,2014-15,2015,Ferry,0.1
+Hobart,2015-16,2016,Ferry,0.1
+Hobart,2016-17,2017,Ferry,0.1
+Hobart,2017-18,2018,Ferry,0.1
+Hobart,2018-19,2019,Ferry,0.1
+Hobart,2019-20,2020,Ferry,0.1
+Hobart,2020-21,2021,Ferry,0.1
+Hobart,2021-22,2022,Ferry,0.2
+Hobart,2022-23,2023,Ferry,0.3
+Hobart,2023-24,2024,Ferry,0.3
+Hobart,2024-25,2025,Ferry,0.3
+Melbourne,1976-77,1977,Bus,83.5
+Melbourne,1977-78,1978,Bus,82.1
+Melbourne,1978-79,1979,Bus,81.6
+Melbourne,1979-80,1980,Bus,80.8
+Melbourne,1980-81,1981,Bus,80.1
+Melbourne,1981-82,1982,Bus,80.9
+Melbourne,1982-83,1983,Bus,80.7
+Melbourne,1983-84,1984,Bus,82.0
+Melbourne,1984-85,1985,Bus,86.7
+Melbourne,1985-86,1986,Bus,88.2
+Melbourne,1986-87,1987,Bus,89.3
+Melbourne,1987-88,1988,Bus,91.4
+Melbourne,1988-89,1989,Bus,92.5
+Melbourne,1989-90,1990,Bus,90.0
+Melbourne,1990-91,1991,Bus,88.8
+Melbourne,1991-92,1992,Bus,88.9
+Melbourne,1992-93,1993,Bus,87.6
+Melbourne,1993-94,1994,Bus,85.6
+Melbourne,1994-95,1995,Bus,87.6
+Melbourne,1995-96,1996,Bus,88.9
+Melbourne,1996-97,1997,Bus,86.3
+Melbourne,1997-98,1998,Bus,85.1
+Melbourne,1998-99,1999,Bus,84.6
+Melbourne,1999-00,2000,Bus,84.0
+Melbourne,2000-01,2001,Bus,83.1
+Melbourne,2001-02,2002,Bus,82.1
+Melbourne,2002-03,2003,Bus,82.6
+Melbourne,2003-04,2004,Bus,81.6
+Melbourne,2004-05,2005,Bus,79.2
+Melbourne,2005-06,2006,Bus,80.5
+Melbourne,2006-07,2007,Bus,86.4
+Melbourne,2007-08,2008,Bus,92.9
+Melbourne,2008-09,2009,Bus,100.4
+Melbourne,2009-10,2010,Bus,104.2
+Melbourne,2010-11,2011,Bus,108.5
+Melbourne,2011-12,2012,Bus,125.8
+Melbourne,2012-13,2013,Bus,118.5
+Melbourne,2013-14,2014,Bus,128.0
+Melbourne,2014-15,2015,Bus,127.2
+Melbourne,2015-16,2016,Bus,126.0
+Melbourne,2016-17,2017,Bus,121.6
+Melbourne,2017-18,2018,Bus,121.5
+Melbourne,2018-19,2019,Bus,125.8
+Melbourne,2019-20,2020,Bus,100.8
+Melbourne,2020-21,2021,Bus,59.3
+Melbourne,2021-22,2022,Bus,68.0
+Melbourne,2022-23,2023,Bus,103.3
+Melbourne,2023-24,2024,Bus,118.5
+Melbourne,2024-25,2025,Bus,118.5
+Melbourne,1976-77,1977,Heavy rail,118.6
+Melbourne,1977-78,1978,Heavy rail,112.1
+Melbourne,1978-79,1979,Heavy rail,106.8
+Melbourne,1979-80,1980,Heavy rail,101.0
+Melbourne,1980-81,1981,Heavy rail,97.6
+Melbourne,1981-82,1982,Heavy rail,89.3
+Melbourne,1982-83,1983,Heavy rail,91.7
+Melbourne,1983-84,1984,Heavy rail,94.6
+Melbourne,1984-85,1985,Heavy rail,97.8
+Melbourne,1985-86,1986,Heavy rail,103.2
+Melbourne,1986-87,1987,Heavy rail,106.3
+Melbourne,1987-88,1988,Heavy rail,100.5
+Melbourne,1988-89,1989,Heavy rail,106.0
+Melbourne,1989-90,1990,Heavy rail,107.5
+Melbourne,1990-91,1991,Heavy rail,107.3
+Melbourne,1991-92,1992,Heavy rail,109.4
+Melbourne,1992-93,1993,Heavy rail,106.5
+Melbourne,1993-94,1994,Heavy rail,101.5
+Melbourne,1994-95,1995,Heavy rail,105.9
+Melbourne,1995-96,1996,Heavy rail,109.8
+Melbourne,1996-97,1997,Heavy rail,113.2
+Melbourne,1997-98,1998,Heavy rail,113.6
+Melbourne,1998-99,1999,Heavy rail,118.9
+Melbourne,1999-00,2000,Heavy rail,125.9
+Melbourne,2000-01,2001,Heavy rail,131.0
+Melbourne,2001-02,2002,Heavy rail,135.9
+Melbourne,2002-03,2003,Heavy rail,139.0
+Melbourne,2003-04,2004,Heavy rail,140.6
+Melbourne,2004-05,2005,Heavy rail,146.0
+Melbourne,2005-06,2006,Heavy rail,163.5
+Melbourne,2006-07,2007,Heavy rail,180.2
+Melbourne,2007-08,2008,Heavy rail,203.7
+Melbourne,2008-09,2009,Heavy rail,217.0
+Melbourne,2009-10,2010,Heavy rail,223.3
+Melbourne,2010-11,2011,Heavy rail,233.8
+Melbourne,2011-12,2012,Heavy rail,227.1
+Melbourne,2012-13,2013,Heavy rail,230.3
+Melbourne,2013-14,2014,Heavy rail,230.9
+Melbourne,2014-15,2015,Heavy rail,232.8
+Melbourne,2015-16,2016,Heavy rail,241.2
+Melbourne,2016-17,2017,Heavy rail,245.6
+Melbourne,2017-18,2018,Heavy rail,251.1
+Melbourne,2018-19,2019,Heavy rail,254.7
+Melbourne,2019-20,2020,Heavy rail,197.0
+Melbourne,2020-21,2021,Heavy rail,86.3
+Melbourne,2021-22,2022,Heavy rail,105.1
+Melbourne,2022-23,2023,Heavy rail,167.0
+Melbourne,2023-24,2024,Heavy rail,195.2
+Melbourne,2024-25,2025,Heavy rail,201.5
+Melbourne,1976-77,1977,Light rail,102.9
+Melbourne,1977-78,1978,Light rail,101.3
+Melbourne,1978-79,1979,Light rail,101.1
+Melbourne,1979-80,1980,Light rail,98.9
+Melbourne,1980-81,1981,Light rail,100.1
+Melbourne,1981-82,1982,Light rail,102.4
+Melbourne,1982-83,1983,Light rail,101.3
+Melbourne,1983-84,1984,Light rail,102.1
+Melbourne,1984-85,1985,Light rail,109.4
+Melbourne,1985-86,1986,Light rail,112.4
+Melbourne,1986-87,1987,Light rail,113.3
+Melbourne,1987-88,1988,Light rail,115.6
+Melbourne,1988-89,1989,Light rail,118.9
+Melbourne,1989-90,1990,Light rail,95.6
+Melbourne,1990-91,1991,Light rail,107.6
+Melbourne,1991-92,1992,Light rail,112.0
+Melbourne,1992-93,1993,Light rail,100.9
+Melbourne,1993-94,1994,Light rail,104.0
+Melbourne,1994-95,1995,Light rail,108.6
+Melbourne,1995-96,1996,Light rail,114.1
+Melbourne,1996-97,1997,Light rail,115.4
+Melbourne,1997-98,1998,Light rail,117.2
+Melbourne,1998-99,1999,Light rail,121.6
+Melbourne,1999-00,2000,Light rail,129.8
+Melbourne,2000-01,2001,Light rail,133.9
+Melbourne,2001-02,2002,Light rail,137.2
+Melbourne,2002-03,2003,Light rail,140.6
+Melbourne,2003-04,2004,Light rail,142.5
+Melbourne,2004-05,2005,Light rail,145.3
+Melbourne,2005-06,2006,Light rail,151.1
+Melbourne,2006-07,2007,Light rail,154.9
+Melbourne,2007-08,2008,Light rail,158.3
+Melbourne,2008-09,2009,Light rail,178.1
+Melbourne,2009-10,2010,Light rail,175.6
+Melbourne,2010-11,2011,Light rail,182.7
+Melbourne,2011-12,2012,Light rail,191.6
+Melbourne,2012-13,2013,Light rail,182.7
+Melbourne,2013-14,2014,Light rail,176.9
+Melbourne,2014-15,2015,Light rail,182.1
+Melbourne,2015-16,2016,Light rail,203.8
+Melbourne,2016-17,2017,Light rail,204.0
+Melbourne,2017-18,2018,Light rail,206.3
+Melbourne,2018-19,2019,Light rail,205.4
+Melbourne,2019-20,2020,Light rail,141.8
+Melbourne,2020-21,2021,Light rail,60.2
+Melbourne,2021-22,2022,Light rail,82.9
+Melbourne,2022-23,2023,Light rail,147.6
+Melbourne,2023-24,2024,Light rail,154.8
+Melbourne,2024-25,2025,Light rail,160.2
+Perth,1976-77,1977,Bus,54.0
+Perth,1977-78,1978,Bus,54.5
+Perth,1978-79,1979,Bus,53.0
+Perth,1979-80,1980,Bus,56.1
+Perth,1980-81,1981,Bus,56.8
+Perth,1981-82,1982,Bus,53.8
+Perth,1982-83,1983,Bus,54.1
+Perth,1983-84,1984,Bus,46.6
+Perth,1984-85,1985,Bus,44.9
+Perth,1985-86,1986,Bus,48.0
+Perth,1986-87,1987,Bus,49.4
+Perth,1987-88,1988,Bus,48.8
+Perth,1988-89,1989,Bus,52.0
+Perth,1989-90,1990,Bus,54.9
+Perth,1990-91,1991,Bus,53.4
+Perth,1991-92,1992,Bus,51.3
+Perth,1992-93,1993,Bus,49.1
+Perth,1993-94,1994,Bus,46.0
+Perth,1994-95,1995,Bus,48.1
+Perth,1995-96,1996,Bus,45.6
+Perth,1996-97,1997,Bus,46.9
+Perth,1997-98,1998,Bus,46.7
+Perth,1998-99,1999,Bus,46.3
+Perth,1999-00,2000,Bus,48.6
+Perth,2000-01,2001,Bus,52.0
+Perth,2001-02,2002,Bus,54.5
+Perth,2002-03,2003,Bus,56.3
+Perth,2003-04,2004,Bus,59.0
+Perth,2004-05,2005,Bus,61.9
+Perth,2005-06,2006,Bus,63.9
+Perth,2006-07,2007,Bus,64.6
+Perth,2007-08,2008,Bus,65.7
+Perth,2008-09,2009,Bus,73.6
+Perth,2009-10,2010,Bus,74.8
+Perth,2010-11,2011,Bus,76.6
+Perth,2011-12,2012,Bus,80.6
+Perth,2012-13,2013,Bus,83.5
+Perth,2013-14,2014,Bus,83.7
+Perth,2014-15,2015,Bus,84.1
+Perth,2015-16,2016,Bus,82.4
+Perth,2016-17,2017,Bus,80.0
+Perth,2017-18,2018,Bus,78.5
+Perth,2018-19,2019,Bus,79.3
+Perth,2019-20,2020,Bus,66.3
+Perth,2020-21,2021,Bus,58.7
+Perth,2021-22,2022,Bus,58.9
+Perth,2022-23,2023,Bus,69.4
+Perth,2023-24,2024,Bus,83.6
+Perth,2024-25,2025,Bus,85.9
+Perth,1976-77,1977,Ferry,0.4
+Perth,1977-78,1978,Ferry,0.4
+Perth,1978-79,1979,Ferry,0.4
+Perth,1979-80,1980,Ferry,0.4
+Perth,1980-81,1981,Ferry,0.4
+Perth,1981-82,1982,Ferry,0.5
+Perth,1982-83,1983,Ferry,0.5
+Perth,1983-84,1984,Ferry,0.5
+Perth,1984-85,1985,Ferry,0.5
+Perth,1985-86,1986,Ferry,0.5
+Perth,1986-87,1987,Ferry,0.6
+Perth,1987-88,1988,Ferry,0.6
+Perth,1988-89,1989,Ferry,0.6
+Perth,1989-90,1990,Ferry,0.6
+Perth,1990-91,1991,Ferry,0.5
+Perth,1991-92,1992,Ferry,0.5
+Perth,1992-93,1993,Ferry,0.5
+Perth,1993-94,1994,Ferry,0.5
+Perth,1994-95,1995,Ferry,0.4
+Perth,1995-96,1996,Ferry,0.5
+Perth,1996-97,1997,Ferry,0.6
+Perth,1997-98,1998,Ferry,0.6
+Perth,1998-99,1999,Ferry,0.5
+Perth,1999-00,2000,Ferry,0.5
+Perth,2000-01,2001,Ferry,0.6
+Perth,2001-02,2002,Ferry,0.5
+Perth,2002-03,2003,Ferry,0.5
+Perth,2003-04,2004,Ferry,0.5
+Perth,2004-05,2005,Ferry,0.5
+Perth,2005-06,2006,Ferry,0.5
+Perth,2006-07,2007,Ferry,0.5
+Perth,2007-08,2008,Ferry,0.5
+Perth,2008-09,2009,Ferry,0.5
+Perth,2009-10,2010,Ferry,0.5
+Perth,2010-11,2011,Ferry,0.5
+Perth,2011-12,2012,Ferry,0.5
+Perth,2012-13,2013,Ferry,0.5
+Perth,2013-14,2014,Ferry,0.4
+Perth,2014-15,2015,Ferry,0.4
+Perth,2015-16,2016,Ferry,0.6
+Perth,2016-17,2017,Ferry,0.7
+Perth,2017-18,2018,Ferry,0.7
+Perth,2018-19,2019,Ferry,0.6
+Perth,2019-20,2020,Ferry,0.6
+Perth,2020-21,2021,Ferry,0.6
+Perth,2021-22,2022,Ferry,0.5
+Perth,2022-23,2023,Ferry,0.7
+Perth,2023-24,2024,Ferry,0.9
+Perth,2024-25,2025,Ferry,0.9
+Perth,1976-77,1977,Heavy rail,7.8
+Perth,1977-78,1978,Heavy rail,8.9
+Perth,1978-79,1979,Heavy rail,8.7
+Perth,1979-80,1980,Heavy rail,7.2
+Perth,1980-81,1981,Heavy rail,6.5
+Perth,1981-82,1982,Heavy rail,6.1
+Perth,1982-83,1983,Heavy rail,6.8
+Perth,1983-84,1984,Heavy rail,8.7
+Perth,1984-85,1985,Heavy rail,8.7
+Perth,1985-86,1986,Heavy rail,9.8
+Perth,1986-87,1987,Heavy rail,9.7
+Perth,1987-88,1988,Heavy rail,9.4
+Perth,1988-89,1989,Heavy rail,8.8
+Perth,1989-90,1990,Heavy rail,8.4
+Perth,1990-91,1991,Heavy rail,7.6
+Perth,1991-92,1992,Heavy rail,9.6
+Perth,1992-93,1993,Heavy rail,13.6
+Perth,1993-94,1994,Heavy rail,22.9
+Perth,1994-95,1995,Heavy rail,23.4
+Perth,1995-96,1996,Heavy rail,25.9
+Perth,1996-97,1997,Heavy rail,29.0
+Perth,1997-98,1998,Heavy rail,29.2
+Perth,1998-99,1999,Heavy rail,28.9
+Perth,1999-00,2000,Heavy rail,29.5
+Perth,2000-01,2001,Heavy rail,31.2
+Perth,2001-02,2002,Heavy rail,31.0
+Perth,2002-03,2003,Heavy rail,31.4
+Perth,2003-04,2004,Heavy rail,31.1
+Perth,2004-05,2005,Heavy rail,32.7
+Perth,2005-06,2006,Heavy rail,34.1
+Perth,2006-07,2007,Heavy rail,35.8
+Perth,2007-08,2008,Heavy rail,42.6
+Perth,2008-09,2009,Heavy rail,54.8
+Perth,2009-10,2010,Heavy rail,56.4
+Perth,2010-11,2011,Heavy rail,58.9
+Perth,2011-12,2012,Heavy rail,63.0
+Perth,2012-13,2013,Heavy rail,65.7
+Perth,2013-14,2014,Heavy rail,63.5
+Perth,2014-15,2015,Heavy rail,64.2
+Perth,2015-16,2016,Heavy rail,62.6
+Perth,2016-17,2017,Heavy rail,60.1
+Perth,2017-18,2018,Heavy rail,60.6
+Perth,2018-19,2019,Heavy rail,61.5
+Perth,2019-20,2020,Heavy rail,49.7
+Perth,2020-21,2021,Heavy rail,43.0
+Perth,2021-22,2022,Heavy rail,42.8
+Perth,2022-23,2023,Heavy rail,53.2
+Perth,2023-24,2024,Heavy rail,59.7
+Perth,2024-25,2025,Heavy rail,61.9
+Sydney,1976-77,1977,Bus,275.5
+Sydney,1977-78,1978,Bus,278.4
+Sydney,1978-79,1979,Bus,271.5
+Sydney,1979-80,1980,Bus,274.7
+Sydney,1980-81,1981,Bus,277.7
+Sydney,1981-82,1982,Bus,274.1
+Sydney,1982-83,1983,Bus,276.1
+Sydney,1983-84,1984,Bus,274.9
+Sydney,1984-85,1985,Bus,279.9
+Sydney,1985-86,1986,Bus,281.8
+Sydney,1986-87,1987,Bus,288.2
+Sydney,1987-88,1988,Bus,296.0
+Sydney,1988-89,1989,Bus,293.6
+Sydney,1989-90,1990,Bus,286.0
+Sydney,1990-91,1991,Bus,292.5
+Sydney,1991-92,1992,Bus,289.6
+Sydney,1992-93,1993,Bus,285.4
+Sydney,1993-94,1994,Bus,283.4
+Sydney,1994-95,1995,Bus,286.4
+Sydney,1995-96,1996,Bus,294.4
+Sydney,1996-97,1997,Bus,300.4
+Sydney,1997-98,1998,Bus,304.6
+Sydney,1998-99,1999,Bus,307.1
+Sydney,1999-00,2000,Bus,302.8
+Sydney,2000-01,2001,Bus,297.8
+Sydney,2001-02,2002,Bus,285.6
+Sydney,2002-03,2003,Bus,286.1
+Sydney,2003-04,2004,Bus,284.0
+Sydney,2004-05,2005,Bus,283.2
+Sydney,2005-06,2006,Bus,282.9
+Sydney,2006-07,2007,Bus,287.5
+Sydney,2007-08,2008,Bus,295.2
+Sydney,2008-09,2009,Bus,289.9
+Sydney,2009-10,2010,Bus,282.6
+Sydney,2010-11,2011,Bus,289.0
+Sydney,2011-12,2012,Bus,293.0
+Sydney,2012-13,2013,Bus,294.0
+Sydney,2013-14,2014,Bus,295.9
+Sydney,2014-15,2015,Bus,295.6
+Sydney,2015-16,2016,Bus,298.6
+Sydney,2016-17,2017,Bus,299.9
+Sydney,2017-18,2018,Bus,316.1
+Sydney,2018-19,2019,Bus,337.8
+Sydney,2019-20,2020,Bus,272.4
+Sydney,2020-21,2021,Bus,193.0
+Sydney,2021-22,2022,Bus,146.0
+Sydney,2022-23,2023,Bus,245.1
+Sydney,2023-24,2024,Bus,287.5
+Sydney,2024-25,2025,Bus,293.4
+Sydney,1976-77,1977,Ferry,10.8
+Sydney,1977-78,1978,Ferry,11.3
+Sydney,1978-79,1979,Ferry,11.7
+Sydney,1979-80,1980,Ferry,13.0
+Sydney,1980-81,1981,Ferry,13.1
+Sydney,1981-82,1982,Ferry,14.8
+Sydney,1982-83,1983,Ferry,15.2
+Sydney,1983-84,1984,Ferry,15.6
+Sydney,1984-85,1985,Ferry,16.0
+Sydney,1985-86,1986,Ferry,16.4
+Sydney,1986-87,1987,Ferry,17.9
+Sydney,1987-88,1988,Ferry,15.4
+Sydney,1988-89,1989,Ferry,17.1
+Sydney,1989-90,1990,Ferry,18.7
+Sydney,1990-91,1991,Ferry,15.3
+Sydney,1991-92,1992,Ferry,13.3
+Sydney,1992-93,1993,Ferry,11.4
+Sydney,1993-94,1994,Ferry,11.8
+Sydney,1994-95,1995,Ferry,12.7
+Sydney,1995-96,1996,Ferry,13.4
+Sydney,1996-97,1997,Ferry,13.9
+Sydney,1997-98,1998,Ferry,14.0
+Sydney,1998-99,1999,Ferry,14.1
+Sydney,1999-00,2000,Ferry,14.2
+Sydney,2000-01,2001,Ferry,15.8
+Sydney,2001-02,2002,Ferry,14.6
+Sydney,2002-03,2003,Ferry,14.6
+Sydney,2003-04,2004,Ferry,15.1
+Sydney,2004-05,2005,Ferry,15.2
+Sydney,2005-06,2006,Ferry,15.2
+Sydney,2006-07,2007,Ferry,15.3
+Sydney,2007-08,2008,Ferry,15.1
+Sydney,2008-09,2009,Ferry,15.8
+Sydney,2009-10,2010,Ferry,16.0
+Sydney,2010-11,2011,Ferry,16.2
+Sydney,2011-12,2012,Ferry,16.8
+Sydney,2012-13,2013,Ferry,17.2
+Sydney,2013-14,2014,Ferry,18.4
+Sydney,2014-15,2015,Ferry,16.9
+Sydney,2015-16,2016,Ferry,18.3
+Sydney,2016-17,2017,Ferry,19.4
+Sydney,2017-18,2018,Ferry,20.1
+Sydney,2018-19,2019,Ferry,20.1
+Sydney,2019-20,2020,Ferry,14.7
+Sydney,2020-21,2021,Ferry,8.1
+Sydney,2021-22,2022,Ferry,7.9
+Sydney,2022-23,2023,Ferry,16.2
+Sydney,2023-24,2024,Ferry,19.5
+Sydney,2024-25,2025,Ferry,19.7
+Sydney,1976-77,1977,Heavy rail,195.0
+Sydney,1977-78,1978,Heavy rail,194.0
+Sydney,1978-79,1979,Heavy rail,195.0
+Sydney,1979-80,1980,Heavy rail,205.0
+Sydney,1980-81,1981,Heavy rail,209.9
+Sydney,1981-82,1982,Heavy rail,215.6
+Sydney,1982-83,1983,Heavy rail,202.2
+Sydney,1983-84,1984,Heavy rail,197.1
+Sydney,1984-85,1985,Heavy rail,195.4
+Sydney,1985-86,1986,Heavy rail,211.9
+Sydney,1986-87,1987,Heavy rail,218.3
+Sydney,1987-88,1988,Heavy rail,238.8
+Sydney,1988-89,1989,Heavy rail,239.5
+Sydney,1989-90,1990,Heavy rail,243.7
+Sydney,1990-91,1991,Heavy rail,245.9
+Sydney,1991-92,1992,Heavy rail,238.5
+Sydney,1992-93,1993,Heavy rail,227.8
+Sydney,1993-94,1994,Heavy rail,231.9
+Sydney,1994-95,1995,Heavy rail,245.5
+Sydney,1995-96,1996,Heavy rail,251.1
+Sydney,1996-97,1997,Heavy rail,258.6
+Sydney,1997-98,1998,Heavy rail,260.3
+Sydney,1998-99,1999,Heavy rail,264.2
+Sydney,1999-00,2000,Heavy rail,273.1
+Sydney,2000-01,2001,Heavy rail,296.5
+Sydney,2001-02,2002,Heavy rail,270.9
+Sydney,2002-03,2003,Heavy rail,267.9
+Sydney,2003-04,2004,Heavy rail,267.8
+Sydney,2004-05,2005,Heavy rail,264.9
+Sydney,2005-06,2006,Heavy rail,268.2
+Sydney,2006-07,2007,Heavy rail,275.7
+Sydney,2007-08,2008,Heavy rail,290.0
+Sydney,2008-09,2009,Heavy rail,298.7
+Sydney,2009-10,2010,Heavy rail,296.3
+Sydney,2010-11,2011,Heavy rail,305.2
+Sydney,2011-12,2012,Heavy rail,314.7
+Sydney,2012-13,2013,Heavy rail,317.3
+Sydney,2013-14,2014,Heavy rail,325.5
+Sydney,2014-15,2015,Heavy rail,338.3
+Sydney,2015-16,2016,Heavy rail,353.9
+Sydney,2016-17,2017,Heavy rail,378.2
+Sydney,2017-18,2018,Heavy rail,396.2
+Sydney,2018-19,2019,Heavy rail,411.9
+Sydney,2019-20,2020,Heavy rail,340.6
+Sydney,2020-21,2021,Heavy rail,233.1
+Sydney,2021-22,2022,Heavy rail,168.3
+Sydney,2022-23,2023,Heavy rail,291.0
+Sydney,2023-24,2024,Heavy rail,338.1
+Sydney,2024-25,2025,Heavy rail,348.5
+Sydney,1976-77,1977,Light rail,0.0
+Sydney,1977-78,1978,Light rail,0.0
+Sydney,1978-79,1979,Light rail,0.0
+Sydney,1979-80,1980,Light rail,0.0
+Sydney,1980-81,1981,Light rail,0.0
+Sydney,1981-82,1982,Light rail,0.0
+Sydney,1982-83,1983,Light rail,0.0
+Sydney,1983-84,1984,Light rail,0.0
+Sydney,1984-85,1985,Light rail,0.0
+Sydney,1985-86,1986,Light rail,0.0
+Sydney,1986-87,1987,Light rail,0.0
+Sydney,1987-88,1988,Light rail,0.0
+Sydney,1988-89,1989,Light rail,3.5
+Sydney,1989-90,1990,Light rail,3.5
+Sydney,1990-91,1991,Light rail,3.4
+Sydney,1991-92,1992,Light rail,3.4
+Sydney,1992-93,1993,Light rail,3.4
+Sydney,1993-94,1994,Light rail,3.4
+Sydney,1994-95,1995,Light rail,3.4
+Sydney,1995-96,1996,Light rail,4.0
+Sydney,1996-97,1997,Light rail,4.7
+Sydney,1997-98,1998,Light rail,5.4
+Sydney,1998-99,1999,Light rail,5.8
+Sydney,1999-00,2000,Light rail,6.2
+Sydney,2000-01,2001,Light rail,6.7
+Sydney,2001-02,2002,Light rail,6.3
+Sydney,2002-03,2003,Light rail,6.2
+Sydney,2003-04,2004,Light rail,5.1
+Sydney,2004-05,2005,Light rail,6.2
+Sydney,2005-06,2006,Light rail,5.7
+Sydney,2006-07,2007,Light rail,6.3
+Sydney,2007-08,2008,Light rail,6.2
+Sydney,2008-09,2009,Light rail,6.0
+Sydney,2009-10,2010,Light rail,5.8
+Sydney,2010-11,2011,Light rail,5.6
+Sydney,2011-12,2012,Light rail,5.9
+Sydney,2012-13,2013,Light rail,5.7
+Sydney,2013-14,2014,Light rail,3.9
+Sydney,2014-15,2015,Light rail,6.1
+Sydney,2015-16,2016,Light rail,9.7
+Sydney,2016-17,2017,Light rail,10.0
+Sydney,2017-18,2018,Light rail,10.3
+Sydney,2018-19,2019,Light rail,10.7
+Sydney,2019-20,2020,Light rail,13.4
+Sydney,2020-21,2021,Light rail,18.7
+Sydney,2021-22,2022,Light rail,16.3
+Sydney,2022-23,2023,Light rail,35.9
+Sydney,2023-24,2024,Light rail,44.9
+Sydney,2024-25,2025,Light rail,46.9

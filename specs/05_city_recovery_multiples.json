@@ -1,0 +1,633 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "description": "Lines: each city's yearly trips indexed to 2018-19 = 100. End labels are kept in value order with leader lines.",
+ "config": {
+  "font": "'Public Sans', 'Segoe UI', system-ui, sans-serif",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleColor": "#52606d",
+   "labelColor": "#52606d",
+   "gridColor": "#e4e7eb",
+   "domainColor": "#9aa5b1",
+   "tickColor": "#9aa5b1"
+  },
+  "legend": {
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "orient": "top",
+   "direction": "horizontal"
+  },
+  "view": {
+   "stroke": null
+  },
+  "title": {
+   "fontSize": 13,
+   "anchor": "start",
+   "color": "#1f2933"
+  }
+ },
+ "title": "Trips each year compared with 2018-19 (2018-19 = 100), all eight cities",
+ "data": {
+  "url": "data/city_totals_recovery.csv"
+ },
+ "width": "container",
+ "height": 340,
+ "transform": [
+  {
+   "filter": "datum.year_end >= 2012"
+  }
+ ],
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "a": 2019.5,
+      "b": 2022.5
+     }
+    ]
+   },
+   "mark": {
+    "type": "rect",
+    "color": "#8a8f98",
+    "opacity": 0.15
+   },
+   "encoding": {
+    "x": {
+     "field": "a",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "x2": {
+     "field": "b"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "rule",
+    "strokeDash": [
+     4,
+     3
+    ],
+    "color": "#8a8f98"
+   },
+   "encoding": {
+    "y": {
+     "datum": 100
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "line",
+    "interpolate": "monotone"
+   },
+   "encoding": {
+    "x": {
+     "field": "year_end",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     },
+     "title": "Year ending 30 June",
+     "axis": {
+      "format": "d",
+      "values": [
+       2012,
+       2015,
+       2018,
+       2021,
+       2024
+      ]
+     }
+    },
+    "y": {
+     "field": "index_2018_19",
+     "type": "quantitative",
+     "title": "Trips (2018-19 = 100)",
+     "scale": {
+      "domain": [
+       20,
+       120
+      ]
+     }
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    },
+    "strokeWidth": {
+     "condition": {
+      "test": "datum.city == 'Melbourne' || datum.city == 'Perth'",
+      "value": 3.2
+     },
+     "value": 1.6
+    },
+    "tooltip": [
+     {
+      "field": "city"
+     },
+     {
+      "field": "fy",
+      "title": "Year"
+     },
+     {
+      "field": "index_2018_19",
+      "title": "Index (2018-19 = 100)"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "city": "Perth",
+      "v": 105.1,
+      "y": 105.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Perth 105"
+     },
+     {
+      "city": "Brisbane",
+      "v": 100.1,
+      "y": 100.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Brisbane 100"
+     },
+     {
+      "city": "Canberra",
+      "v": 99.5,
+      "y": 96.3,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Canberra 100"
+     },
+     {
+      "city": "Adelaide",
+      "v": 91.3,
+      "y": 91.3,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Adelaide 91"
+     },
+     {
+      "city": "Sydney",
+      "v": 90.8,
+      "y": 87.5,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Sydney 91"
+     },
+     {
+      "city": "Hobart",
+      "v": 82.7,
+      "y": 82.7,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Hobart 83"
+     },
+     {
+      "city": "Darwin",
+      "v": 82.1,
+      "y": 78.9,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Darwin 82"
+     },
+     {
+      "city": "Melbourne",
+      "v": 82.0,
+      "y": 75.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Melbourne 82"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "strokeWidth": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    },
+    "x2": {
+     "field": "x1"
+    },
+    "y": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "y2": {
+     "field": "y"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "city": "Perth",
+      "v": 105.1,
+      "y": 105.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Perth 105"
+     },
+     {
+      "city": "Brisbane",
+      "v": 100.1,
+      "y": 100.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Brisbane 100"
+     },
+     {
+      "city": "Canberra",
+      "v": 99.5,
+      "y": 96.3,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Canberra 100"
+     },
+     {
+      "city": "Adelaide",
+      "v": 91.3,
+      "y": 91.3,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Adelaide 91"
+     },
+     {
+      "city": "Sydney",
+      "v": 90.8,
+      "y": 87.5,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Sydney 91"
+     },
+     {
+      "city": "Hobart",
+      "v": 82.7,
+      "y": 82.7,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Hobart 83"
+     },
+     {
+      "city": "Darwin",
+      "v": 82.1,
+      "y": 78.9,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Darwin 82"
+     },
+     {
+      "city": "Melbourne",
+      "v": 82.0,
+      "y": 75.1,
+      "x0": 2025,
+      "x1": 2026.3,
+      "lab": "Melbourne 82"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "fontSize": 11,
+    "fontWeight": "bold"
+   },
+   "encoding": {
+    "x": {
+     "field": "x1",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 2021,
+      "y": 24,
+      "t": "COVID-19 years"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "fontSize": 11,
+    "fontStyle": "italic",
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "city": "Adelaide",
+      "year_end": 2022,
+      "fy": "2021-22",
+      "index": 62.3
+     },
+     {
+      "city": "Brisbane",
+      "year_end": 2022,
+      "fy": "2021-22",
+      "index": 58.3
+     },
+     {
+      "city": "Canberra",
+      "year_end": 2022,
+      "fy": "2021-22",
+      "index": 59.4
+     },
+     {
+      "city": "Darwin",
+      "year_end": 2021,
+      "fy": "2020-21",
+      "index": 78.6
+     },
+     {
+      "city": "Hobart",
+      "year_end": 2021,
+      "fy": "2020-21",
+      "index": 81.5
+     },
+     {
+      "city": "Melbourne",
+      "year_end": 2021,
+      "fy": "2020-21",
+      "index": 35.1
+     },
+     {
+      "city": "Perth",
+      "year_end": 2022,
+      "fy": "2021-22",
+      "index": 72.2
+     },
+     {
+      "city": "Sydney",
+      "year_end": 2022,
+      "fy": "2021-22",
+      "index": 43.4
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 55,
+    "stroke": "#ffffff",
+    "strokeWidth": 1.2,
+    "opacity": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "year_end",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "index",
+     "type": "quantitative"
+    },
+    "color": {
+     "field": "city",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Canberra",
+       "Hobart",
+       "Darwin"
+      ],
+      "scheme": "tableau10"
+     },
+     "legend": null
+    },
+    "tooltip": [
+     {
+      "field": "city"
+     },
+     {
+      "field": "fy",
+      "title": "Lowest year"
+     },
+     {
+      "field": "index",
+      "title": "Index (2018-19 = 100)"
+     }
+    ]
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x0": 2020.5,
+      "x1": 2021,
+      "index": 35.1,
+      "lab": "Lowest point of all:\nMelbourne, 2020-21, 35"
+     }
+    ]
+   },
+   "mark": {
+    "type": "rule",
+    "color": "#1f2933",
+    "strokeWidth": 0.8
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "x2": {
+     "field": "x1"
+    },
+    "y": {
+     "field": "index",
+     "type": "quantitative"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x0": 2020.5,
+      "x1": 2021,
+      "index": 35.1,
+      "lab": "Lowest point of all:\nMelbourne, 2020-21, 35"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "baseline": "middle",
+    "dx": -2,
+    "fontSize": 11,
+    "fontWeight": "bold",
+    "color": "#1f2933",
+    "lineBreak": "\n"
+   },
+   "encoding": {
+    "x": {
+     "field": "x0",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       2012,
+       2029
+      ],
+      "zero": false,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "index",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  }
+ ]
+}
