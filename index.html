@@ -99,7 +99,7 @@ code{font-size:.9em}
   <h2>Perth and Brisbane are back. Melbourne is not.</h2>
   <p>Compare each city with its last full year before COVID-19 (2018-19). Perth and Brisbane have passed it. Melbourne has not, because its trains and trams are still about a fifth below 2018-19 levels. Trams and light rail are strongly up in Sydney and Canberra only because new lines opened.</p>
     <div class="grid" style="margin-top:20px">
-    <figure><div class="num">Chart 3</div><div class="chart" id="c3" role="img" aria-label="Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips."></div><figcaption>Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips. <span class="src">Source: BITRE Yearbook 2025, Table 2.5; state boundaries from the Australian Bureau of Statistics (ASGS Edition 4, 2026 boundaries)</span></figcaption></figure>
+    <figure><div class="num">Chart 3</div><div class="chart" id="c3" role="img" aria-label="Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips. Darwin and Hobart have fewer than 20 million trips, so each has a single dot with its exact figure, in millions, beside it."></div><figcaption>Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips. Darwin and Hobart have fewer than 20 million trips, so each has a single dot with its exact figure, in millions, beside it. <span class="src">Source: BITRE Yearbook 2025, Table 2.5; state boundaries from the Australian Bureau of Statistics (ASGS Edition 4, 2026 boundaries)</span></figcaption></figure>
     <figure><div class="num">Chart 4</div><div class="chart" id="c4" role="img" aria-label="Change in trips per resident since 2018-19. Bars left of zero are trips lost per person and bars to the right are gains. Every city rides less per person than before COVID-19. The note on the right gives each city's total net change, and Melbourne (105 million fewer trips) and Sydney (72 million fewer) account for the whole national shortfall."></div><figcaption>Change in trips per resident since 2018-19. Bars left of zero are trips lost per person and bars to the right are gains. Every city rides less per person than before COVID-19. The note on the right gives each city's total net change, and Melbourne (105 million fewer trips) and Sydney (72 million fewer) account for the whole national shortfall. <span class="src">Source: BITRE Yearbook 2025, Table 2.5</span></figcaption></figure>
   </div>
   <div class="stack" style="margin-top:20px">
@@ -150,7 +150,7 @@ code{font-size:.9em}
     <figure><div class="num">Chart 13</div><div class="chart" id="c13" role="img" aria-label="Each circle is a line. Further right means more of its travel happens at the two peaks, and larger means more of the network's weekday travel. Richmond and the City Loop (a very small share) and Alamein are the most peak-heavy. Upfield is the least among the larger lines."></div><figcaption>Each circle is a line. Further right means more of its travel happens at the two peaks, and larger means more of the network's weekday travel. Richmond and the City Loop (a very small share) and Alamein are the most peak-heavy. Upfield is the least among the larger lines. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
   </div>
   <div class="stack" style="margin-top:20px">
-    <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 14</div><div class="chart" id="c14" role="img" aria-label="Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller."></div><figcaption>Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
+    <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 14</div><div class="chart" id="c14" role="img" aria-label="Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller."></div><figcaption style="max-width:none">Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
   </div>
 </section>
 
@@ -259,14 +259,14 @@ function themed(spec, name){
   const c = s.config;
   c.axis = Object.assign(c.axis, {labelColor: mute, titleColor: mute, gridColor: grid, domainColor: mute, tickColor: mute});
   c.legend = Object.assign(c.legend, {labelColor: ink, titleColor: mute});
-  c.title = Object.assign(c.title, {color: ink});
+  c.title = Object.assign(c.title, {color: ink, subtitleColor: mute});   // subtitles default to black, which vanishes on the dark theme
   c.header = {labelColor: ink};
   c.background = null;
   c.text = {color: ink};
   const keepInk = name === '06_mode_recovery_heatmap' || name === '03_national_map';
   let txt = JSON.stringify(s);
   if (dark) {
-    txt = txt.replace(/#cfd8e2/g, '#222b36').replace(/#d6e3f2/g, '#223247').replace(/#08306b/g, '#a8cdf7').replace(/#1d4e89/g, '#6aa6e8').replace(/#9db7d5/g, '#4b6a8f').replace(/#b8c2cc/g, '#5b6675');
+    txt = txt.replace(/#6b7685/g, '#d3d8de').replace(/#cfd8e2/g, '#222b36').replace(/#d6e3f2/g, '#223247').replace(/#08306b/g, '#a8cdf7').replace(/#1d4e89/g, '#6aa6e8').replace(/#9db7d5/g, '#4b6a8f').replace(/#b8c2cc/g, '#5b6675');
     if (!keepInk) txt = txt.replace(/#1f2933/g, ink).replace(/#ffffff/g, '#171e28');
   }
   const out = JSON.parse(txt);
@@ -283,6 +283,10 @@ async function render(){
     try {
       if (!specCache[name]) specCache[name] = await (await fetch(BASE + 'specs/' + name + '.json')).json();
       const sp = themed(specCache[name], name);
+      // Chart 14 (heatmap + colour key): widen the heatmap to use the card, leaving room for the key, so nothing needs scrolling
+      if (name.indexOf('14_') === 0 && sp.hconcat) {
+        sp.hconcat[0].width = Math.max(260, Math.min(600, Math.floor(el.clientWidth - 14 - 130 - 232)));   // 232 px = row labels, key axis labels and gaps
+      }
       // Chart 8 (two side-by-side panels): stretch the panels so the pair fills its card instead of leaving a gap on the right
       if (name.indexOf('08_') === 0 && sp.hconcat) {
         const w = Math.max(220, Math.min(520, Math.floor((el.clientWidth - 14 - 2 * 80) / 2)));   // 80 px per panel for the axis labels and title
