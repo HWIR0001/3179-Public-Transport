@@ -29,7 +29,7 @@
  },
  "title": {
   "text": "Riding versus driving, 2024-25",
-  "subtitle": "Each ring is a city: ring size is population and slices are the mix of modes. Hover a ring to highlight it."
+  "subtitle": "Each ring is a city: ring size is population (key at bottom right) and slices are the mix of modes. Hover a ring to highlight it."
  },
  "width": "container",
  "height": 380,
@@ -322,6 +322,173 @@
       "zero": false,
       "nice": false
      }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 126,
+      "p": 500000,
+      "lab": "0.5M",
+      "r": 16.3,
+      "cy": 333.7,
+      "top": 326.4,
+      "sz": 834.7
+     },
+     {
+      "x": 126,
+      "p": 2000000,
+      "lab": "2M",
+      "r": 24.7,
+      "cy": 325.3,
+      "top": 309.6,
+      "sz": 1916.7
+     },
+     {
+      "x": 126,
+      "p": 5000000,
+      "lab": "5M",
+      "r": 34.4,
+      "cy": 315.6,
+      "top": 290.2,
+      "sz": 3717.6
+     }
+    ]
+   },
+   "mark": {
+    "type": "circle",
+    "filled": false,
+    "stroke": "#7b8794",
+    "strokeWidth": 1.2,
+    "opacity": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       140
+      ],
+      "zero": true,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "cy",
+     "type": "quantitative",
+     "scale": null,
+     "axis": null
+    },
+    "size": {
+     "field": "sz",
+     "type": "quantitative",
+     "scale": null,
+     "axis": null
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 126,
+      "p": 500000,
+      "lab": "0.5M",
+      "r": 16.3,
+      "cy": 333.7,
+      "top": 326.4,
+      "sz": 834.7
+     },
+     {
+      "x": 126,
+      "p": 2000000,
+      "lab": "2M",
+      "r": 24.7,
+      "cy": 325.3,
+      "top": 309.6,
+      "sz": 1916.7
+     },
+     {
+      "x": 126,
+      "p": 5000000,
+      "lab": "5M",
+      "r": 34.4,
+      "cy": 315.6,
+      "top": 290.2,
+      "sz": 3717.6
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 10,
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       140
+      ],
+      "zero": true,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "top",
+     "type": "quantitative",
+     "scale": null,
+     "axis": null
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 126,
+      "cy": 269.2,
+      "t": "Population"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "fontStyle": "italic",
+    "color": "#1f2933"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       140
+      ],
+      "zero": true,
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "cy",
+     "type": "quantitative",
+     "scale": null,
+     "axis": null
+    },
+    "text": {
+     "field": "t"
     }
    }
   },

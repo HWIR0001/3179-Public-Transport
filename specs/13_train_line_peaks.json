@@ -99,7 +99,10 @@
     "size": {
      "field": "share_pct",
      "type": "quantitative",
-     "title": "Share of all weekday train travel (%)",
+     "title": [
+      "Share of all weekday",
+      "train travel (%)"
+     ],
      "scale": {
       "range": [
        60,

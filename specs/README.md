@@ -28,8 +28,11 @@ Bubble scatter where each bubble is a donut of the city mode mix. x = trips per 
 - Layer 4: `text` from `inline values`; 0 transform(s); encodes x=x, y=y, text=t
 - Layer 5: `rule` from `inline values`; 0 transform(s); encodes x=x0, x2=xd, y=y0, y2=yd
 - Layer 6: `circle` from `inline values`; 0 transform(s); encodes x=x0, y=y0
-- Layer 7: `text` from `inline values`; 0 transform(s); encodes x=xd, y=ly, text=city
-- Layer 8: `arc` from `data/city_mode_long.csv`; 6 transform(s); encodes x=xd, y=yd, theta=a0, theta2=a1, radius=pop, color=mode, opacity=value
+- Layer 7: `circle` from `inline values`; 0 transform(s); encodes x=x, y=cy, size=sz
+- Layer 8: `text` from `inline values`; 0 transform(s); encodes x=x, y=top, text=lab
+- Layer 9: `text` from `inline values`; 0 transform(s); encodes x=x, y=cy, text=t
+- Layer 10: `text` from `inline values`; 0 transform(s); encodes x=xd, y=ly, text=city
+- Layer 11: `arc` from `data/city_mode_long.csv`; 6 transform(s); encodes x=xd, y=yd, theta=a0, theta2=a1, radius=pop, color=mode, opacity=value
 
 ## Chart 3: 03_national_map.json
 **Trips in 2024-25 as % of 2018-19. Each state is coloured by its capital city.**  
@@ -41,12 +44,15 @@ Choropleth: each state is coloured by its capital city's 2024-25 trips as % of 2
 - Layer 4: `circle` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat
 - Layer 5: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=t
 - Layer 6: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=t
-- Layer 7: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
-- Layer 8: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
-- Layer 9: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
+- Layer 7: `rule` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, longitude2=lon2, latitude2=lat2
+- Layer 8: `text` from `inline values`; 0 transform(s); encodes longitude=lon2, latitude=lat2, text=lab
+- Layer 9: `text` from `inline values`; 0 transform(s); encodes longitude=lon2, latitude=lat2, text=lab
 - Layer 10: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
 - Layer 11: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
 - Layer 12: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
+- Layer 13: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
+- Layer 14: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
+- Layer 15: `text` from `inline values`; 0 transform(s); encodes longitude=lon, latitude=lat, text=lab
 
 ## Chart 4: 04_change_by_mode.json
 **Change in yearly trips per resident since 2018-19, by city and mode**  
@@ -116,7 +122,7 @@ Lines: share of a day's Melbourne train loads by hour for each day type. Hours a
 
 - Layer 1: `rect` from `inline values`; 0 transform(s); encodes x=a, x2=b
 - Layer 2: `text` from `inline values`; 0 transform(s); encodes x=x, y=17.5, text=t
-- Layer 3: `line` from `data/train_hourly_daytype.csv`; 0 transform(s); encodes x=hour, y=share_pct, color=day, strokeDash=value
+- Layer 3: `line` from `data/train_hourly_daytype.csv`; 0 transform(s); encodes x=hour, y=share_pct, color=day, strokeDash=day
 
 ## Chart 11: 11_canberra_hourly.json
 **Canberra: share of daily boardings by hour, July to February, before and during COVID-19**  

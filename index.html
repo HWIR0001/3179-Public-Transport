@@ -304,10 +304,31 @@ function themed(spec, name){
   if (out.width === 'container') out.autosize = {type: 'fit-x', contains: 'padding'};
   return out;
 }
+// Wraps a title or subtitle onto as many lines as the chart's box needs (measured with the real font), so nothing is cut off
+function fitText(text, px, font){
+  const ctx = fitText.c || (fitText.c = document.createElement('canvas').getContext('2d'));
+  ctx.font = font;
+  const lines = []; let cur = '';
+  for (const w of String(text).split(' ')) {
+    const t = cur ? cur + ' ' + w : w;
+    if (cur && ctx.measureText(t).width > px) { lines.push(cur); cur = w; } else cur = t;
+  }
+  lines.push(cur);
+  return lines.length > 1 ? lines : lines[0];
+}
+function wrapTitles(sp, px){
+  const t = sp.title; if (!t) return;
+  const fam = '"Public Sans","Segoe UI",system-ui,sans-serif', flat = v => Array.isArray(v) ? v.join(' ') : v;
+  if (typeof t === 'string' || Array.isArray(t)) sp.title = fitText(flat(t), px, '700 13px ' + fam);
+  else {
+    if (t.text) t.text = fitText(flat(t.text), px, '700 13px ' + fam);
+    if (t.subtitle) t.subtitle = fitText(flat(t.subtitle), px, '400 12.5px ' + fam);
+  }
+}
 // Fetch each spec once, apply the theme, and draw it with vega-embed
 async function render(){
   // Charts are drawn on canvas, so wait for the web font first; otherwise they would fall back to a system font
-  try { await Promise.all([document.fonts.load('400 12px "Public Sans"'), document.fonts.load('600 12px "Public Sans"')]); } catch (e) {}
+  try { await Promise.all([document.fonts.load('400 12px "Public Sans"'), document.fonts.load('600 12px "Public Sans"'), document.fonts.load('700 13px "Public Sans"')]); } catch (e) {}
   for (const [i, name] of CHARTS) {
     const el = document.getElementById('c' + i);
     if (!el) continue;
@@ -330,6 +351,12 @@ async function render(){
           const k = avail / sp.width;
           sp.width = Math.round(sp.width * k); sp.height = Math.round(sp.height * k); sp.projection.scale *= k;
         }
+      }
+      // Titles wrap to the box; the chart 10 key goes into 3 columns on narrow boxes so it is never cut off
+      wrapTitles(sp, (typeof sp.width === 'number' && sp.projection ? sp.width + 10 : el.clientWidth - 24));
+      if (name.indexOf('10_') === 0) {
+        const cols = el.clientWidth < 640 ? 3 : 5;
+        sp.layer.forEach(l => { const e = l.encoding || {}; ['color', 'strokeDash'].forEach(k => { if (e[k] && e[k].legend) e[k].legend.columns = cols; }); });
       }
       await vegaEmbed(el, sp, {actions: false, renderer: 'canvas'});
       el.classList.toggle('fixed', sp.width !== 'container' && typeof sp.width === 'number');

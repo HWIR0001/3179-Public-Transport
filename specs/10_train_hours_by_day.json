@@ -179,6 +179,9 @@
        "#8e5bc4",
        "#8a8f98"
       ]
+     },
+     "legend": {
+      "labelExpr": "datum.label == 'Weekday in school holidays' ? 'School holidays' : datum.label"
      }
     },
     "strokeDash": {
@@ -215,6 +218,9 @@
         3
        ]
       ]
+     },
+     "legend": {
+      "labelExpr": "datum.label == 'Weekday in school holidays' ? 'School holidays' : datum.label"
      }
     },
     "tooltip": [
