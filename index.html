@@ -57,6 +57,15 @@ footer h3{font-size:.95rem;color:var(--fg);margin:12px 0 4px}
 footer h2{font-size:1.15rem;color:var(--fg)}
 footer ul{padding-left:1.2em;margin:0 0 16px}
 footer li{margin-bottom:4px}
+.note{color:var(--muted);font-size:.92em}
+.al{max-width:780px;margin-inline:auto}
+.al p{max-width:68ch;margin:0 0 20px}
+.al.wide p{max-width:none;margin:0 0 12px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-top:8px}
+.pair>p{margin:0;max-width:62ch;align-self:start}
+.pair>.a-t{grid-area:1/1}.pair>.b-t{grid-area:1/2}.pair>.a-f{grid-area:2/1;min-width:0}.pair>.b-f{grid-area:2/2;min-width:0}
+@media (max-width:940px){.pair{grid-template-columns:1fr;gap:12px}
+ .pair>.a-t{grid-area:1/1}.pair>.a-f{grid-area:2/1}.pair>.b-t{grid-area:3/1;margin-top:12px}.pair>.b-f{grid-area:4/1}}
 .hl{font-weight:700;color:var(--accent)}
 .hl-warn{color:var(--warn)}
 .factor{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
@@ -85,9 +94,11 @@ code{font-size:.9em}
 
 <!-- Section: Trains and buses carry the load -->
 <section>
+  <div class="al">
   <p class="factor">Factor: mode</p>
   <h2>Trains and buses carry the load, and trams have grown</h2>
   <p>Over 48 years, yearly trips have grown by about half. <strong class="hl">Trains grew fastest</strong>, taking share from buses until they carried as many trips as buses by 2013. Ferries are small everywhere. COVID-19 cut trips to about half their normal level at the low point, and <strong class="hl">only ferries have fully returned to their 2018-19 level</strong>.</p>
+  </div>
   <div class="stack">
     <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 1</div><div class="chart" id="c1" role="img" aria-label="Each coloured band is a mode, and the total width of the stream is all trips. Bus sits at the bottom with train directly above it, so you can watch the train band thicken while the bus band stays flat. Labels give each mode's share of trips. The grey band marks the COVID-19 years."></div><figcaption>Each coloured band is a mode, and the total width of the stream is all trips. Bus sits at the bottom with train directly above it, so you can watch the train band thicken while the bus band stays flat. Labels give each mode's share of trips. The grey band marks the COVID-19 years. <span class="src">Source: BITRE Yearbook 2025, Table 2.5</span></figcaption></figure>
   </div>
@@ -95,9 +106,11 @@ code{font-size:.9em}
 
 <!-- Section: Every city rides differently -->
 <section>
+  <div class="al">
   <p class="factor">Factor: network and population</p>
   <h2>Every city rides differently</h2>
   <p>Sydney and Melbourne have the only large train and tram networks, so they dominate the totals. Brisbane and Perth lean on buses. Canberra and Hobart are mostly buses. Counting trips per resident shows how far apart the cities are: <strong class="hl">a Sydney resident makes nearly five times as many trips a year as someone in Hobart</strong>. The rings below also show each city's mix of modes.</p>
+  </div>
   <div class="stack">
     <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 2</div><div class="chart" id="c2" role="img" aria-label="Each ring is a city. Further right means more public transport trips per person, and higher means more car travel than the eight-city average. Ring size shows population and the slices show the mix of bus, train, tram and ferry trips. Brisbane and Perth sit almost on top of each other, so their rings are moved and joined by a line to their true position. Hover a ring to highlight it."></div><figcaption>Each ring is a city. Further right means more public transport trips per person, and higher means more car travel than the eight-city average. Ring size shows population and the slices show the mix of bus, train, tram and ferry trips. Brisbane and Perth sit almost on top of each other, so their rings are moved and joined by a line to their true position. Hover a ring to highlight it. <span class="src">Source: BITRE Yearbook 2025 with ABS Regional Population 2024-25</span></figcaption></figure>
   </div>
@@ -107,10 +120,15 @@ code{font-size:.9em}
 <section>
   <p class="factor">Factor: COVID-19</p>
   <h2>Perth and Brisbane are back. Melbourne is not.</h2>
-  <p>Compare each city with its last full year before COVID-19 (2018-19). <strong class="hl">Perth and Brisbane have passed it</strong>. <strong class="hl hl-warn">Melbourne has not</strong>, because its trains and trams are still about a fifth below 2018-19 levels. Trams and light rail are strongly up in Sydney and Canberra only because new lines opened.</p>
-    <div class="grid" style="margin-top:20px">
+  <div class="pair">
+    <p class="a-t">Compare each city with its last full year before COVID-19 (2018-19). <strong class="hl">Perth and Brisbane have passed it</strong>. <strong class="hl hl-warn">Melbourne has not</strong>, because its trains and trams are still about a fifth below 2018-19 levels.</p>
+    <p class="b-t">Trams and light rail are strongly up in Sydney and Canberra only because new lines opened.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 3</div><div class="chart" id="c3" role="img" aria-label="Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips. Darwin and Hobart have fewer than 20 million trips, so each has a single dot with its exact figure, in millions, beside it."></div><figcaption>Each state is coloured by how its capital city's trips compare with 2018-19. Blue is above 2018-19, red is below. The sea is grey. Each dot is 20 million trips in 2024-25, so more dots means more trips. Darwin and Hobart have fewer than 20 million trips, so each has a single dot with its exact figure, in millions, beside it. <span class="src">Source: BITRE Yearbook 2025, Table 2.5; state boundaries from the Australian Bureau of Statistics (ASGS Edition 4, 2026 boundaries)</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 4</div><div class="chart" id="c4" role="img" aria-label="Change in trips per resident since 2018-19. Bars left of zero are trips lost per person and bars to the right are gains. Every city rides less per person than before COVID-19. The note on the right gives each city's total net change, and Melbourne (105 million fewer trips) and Sydney (72 million fewer) account for the whole national shortfall."></div><figcaption>Change in trips per resident since 2018-19. Bars left of zero are trips lost per person and bars to the right are gains. Every city rides less per person than before COVID-19. The note on the right gives each city's total net change, and Melbourne (105 million fewer trips) and Sydney (72 million fewer) account for the whole national shortfall. <span class="src">Source: BITRE Yearbook 2025, Table 2.5</span></figcaption></figure>
+    </div>
   </div>
   <div class="stack" style="margin-top:20px">
     <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 5</div><div class="chart" id="c5" role="img" aria-label="Total trips each year with 2018-19 set to 100. Perth and Brisbane climbed back above the line, while Melbourne and Darwin sit lowest. Dots mark each city's lowest year during COVID-19, and the label marks the deepest of all."></div><figcaption>Total trips each year with 2018-19 set to 100. Perth and Brisbane climbed back above the line, while Melbourne and Darwin sit lowest. Dots mark each city's lowest year during COVID-19, and the label marks the deepest of all. <span class="src">Source: BITRE Yearbook 2025, Table 2.5</span></figcaption></figure>
@@ -121,10 +139,15 @@ code{font-size:.9em}
 <section>
   <p class="factor">Factor: population growth and the car</p>
   <h2>Even before COVID-19, Australians were taking fewer trips per person in some cities</h2>
-  <p>Cities grow, so total trips can rise while each resident rides less. <strong class="hl">Trips per person have fallen since 2019 in every city</strong>, and in Canberra and Hobart they were falling long before. The share of all distance travelled by public transport shows the same pattern against the car: <strong class="hl hl-warn">it has slipped in all eight cities</strong>.</p>
-  <div class="grid">
+  <div class="pair">
+    <p class="a-t">Cities grow, so total trips can rise while each resident rides less. <strong class="hl">Trips per person have fallen since 2019 in every city</strong>, and in Canberra and Hobart they were falling long before.</p>
+    <p class="b-t">The share of all distance travelled by public transport shows the same pattern against the car: <strong class="hl hl-warn">it has slipped in all eight cities</strong>.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 6</div><div class="chart" id="c6" role="img" aria-label="Trips per resident each year. Sydney and Melbourne ride far more than anywhere else, and both have dropped since 2019."></div><figcaption>Trips per resident each year. Sydney and Melbourne ride far more than anywhere else, and both have dropped since 2019. <span class="src">Source: BITRE Yearbook 2025 with ABS Regional Population 2001 to 2025</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 7</div><div class="chart" id="c7" role="img" aria-label="Public transport share of all passenger-kilometres, cars included, before COVID-19 (Before = 2018-19), at each city's lowest year (Low point, year printed above the dot) and after (After = 2024-25). Sydney leads, but its share fell from 16% to 14%, and no city has returned to its 2018-19 share."></div><figcaption>Public transport share of all passenger-kilometres, cars included, before COVID-19 (Before = 2018-19), at each city's lowest year (Low point, year printed above the dot) and after (After = 2024-25). Sydney leads, but its share fell from 16% to 14%, and no city has returned to its 2018-19 share. <span class="src">Source: BITRE Yearbook 2025, Table 2.3</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -147,10 +170,15 @@ code{font-size:.9em}
 <section>
   <p class="factor">Factor: time of day</p>
   <h2>Everyone travels at the same hours</h2>
-  <p>Public transport is sized for the busiest hours. On a Melbourne weekday, the four hours from 7 to 9 am and from 4 to 6 pm carry <strong class="hl">about 48% of all train travel</strong>. Weekends and public holidays have no sharp peak, only a broad plateau from mid-morning to early evening. Canberra's buses show the same two sharp peaks, and the afternoon one starts at 3 pm, which fits school finishing times. <strong class="hl">That 3 pm spike grew from 13% to 15% of daily boardings in 2020-21</strong> even though total boardings fell by about a third, so school trips held up better than commuting. A network built for these hours has a lot of spare room in the middle of the day.</p>
-  <div class="grid">
+  <div class="pair">
+    <p class="a-t">Public transport is sized for the busiest hours. On a Melbourne weekday, the four hours from 7 to 9 am and from 4 to 6 pm carry <strong class="hl">about 48% of all train travel</strong>. Weekends and public holidays have no sharp peak, only a broad plateau from mid-morning to early evening.</p>
+    <p class="b-t">Canberra's buses show the same two sharp peaks, and the afternoon one starts at 3 pm, which fits school finishing times. <strong class="hl">That 3 pm spike grew from 13% to 15% of daily boardings in 2020-21</strong> even though total boardings fell by about a third, so school trips held up better than commuting. A network built for these hours has a lot of spare room in the middle of the day.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 10</div><div class="chart" id="c10" role="img" aria-label="Share of each day type's train travel by hour. Grey bands mark the rush hours, 7 to 9 am and 4 to 6 pm. Hours after 24 are the early morning of the next day. School holidays (dashed) take a little off the morning peak."></div><figcaption>Share of each day type's train travel by hour. Grey bands mark the rush hours, 7 to 9 am and 4 to 6 pm. Hours after 24 are the early morning of the next day. School holidays (dashed) take a little off the morning peak. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 11</div><div class="chart" id="c11" role="img" aria-label="Boardings by hour of the day at Canberra stops, July to February of each year, so the two periods cover the same months. Each line is a share of its own period, so the shapes compare even though 2020-21 had about 36% fewer boardings. The midnight bucket is left out because it looks like a placeholder for records with no time."></div><figcaption>Boardings by hour of the day at Canberra stops, July to February of each year, so the two periods cover the same months. Each line is a share of its own period, so the shapes compare even though 2020-21 had about 36% fewer boardings. The midnight bucket is left out because it looks like a placeholder for records with no time. <span class="src">Source: ACT Government Open Data, boardings by stop by hour, 2019-20 and 2020-21</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -158,12 +186,20 @@ code{font-size:.9em}
 <section>
   <p class="factor">Factor: time of day and route</p>
   <h2>Inside Melbourne's trains: when, where and how full</h2>
-  <p>A second Melbourne dataset records the passenger load on individual train trips across 2024-25. It is a sample, covering roughly a quarter of weekday train services, and loads are rounded. So these charts show shares and shapes, not totals. Trains run towards the city in the morning and away from it in the evening. The most crowded trips in the sample are on the <strong class="hl">Belgrave, Pakenham and Cranbourne lines</strong>.</p>
-  <div class="grid">
+  <p>A second Melbourne dataset records the passenger load on individual train trips across 2024-25. It is a sample, covering roughly a quarter of weekday train services, and loads are rounded. So these charts show shares and shapes, not totals.</p>  <div class="pair">
+    <p class="a-t">Trains run towards the city in the morning and away from it in the evening.</p>
+    <p class="b-t">The circles rank each line by how much of its weekday travel falls in the two peaks.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 12</div><div class="chart" id="c12" role="img" aria-label="Weekday train loads towards the city (blue, above zero) and away from it (orange, below zero). Towards-city travel peaks in the morning rush and away-from-city travel in the evening rush. The rush hours are 7 to 9 am and 4 to 6 pm."></div><figcaption>Weekday train loads towards the city (blue, above zero) and away from it (orange, below zero). Towards-city travel peaks in the morning rush and away-from-city travel in the evening rush. The rush hours are 7 to 9 am and 4 to 6 pm. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 13</div><div class="chart" id="c13" role="img" aria-label="Each circle is a line. Further right means more of its travel happens at the two peaks, and larger means more of the network's weekday travel. Richmond and the City Loop (a very small share) and Alamein are the most peak-heavy. Upfield is the least among the larger lines."></div><figcaption>Each circle is a line. Further right means more of its travel happens at the two peaks, and larger means more of the network's weekday travel. Richmond and the City Loop (a very small share) and Alamein are the most peak-heavy. Upfield is the least among the larger lines. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
+    </div>
   </div>
-  <div class="stack" style="margin-top:20px">
+  <div class="al wide" style="margin-top:24px">
+    <p>The most crowded trips in the sample are on the <strong class="hl">Belgrave, Pakenham and Cranbourne lines</strong>.</p>
+  </div>
+  <div class="stack" style="margin-top:0">
     <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 14</div><div class="chart" id="c14" role="img" aria-label="Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller."></div><figcaption style="max-width:none">Each row is a line and each square an hour. Colour combines two things: how big a share of the line's weekday travel falls in that hour, and how many passengers are on board at the busiest point of an average trip. Blue means a bigger share of the line's weekday travel falls in that hour, orange means more passengers on board, and dark slate grey means both. The colour changes smoothly rather than in bands, and the key gives the numbers along each axis (values above the last tick share the darkest shade). Loads are averages over the sampled trips, so single trains can be much fuller. <span class="src">Source: Victoria Department of Transport and Planning, train load data 2024-25 (sample)</span></figcaption></figure>
   </div>
 </section>
@@ -172,17 +208,32 @@ code{font-size:.9em}
 <section>
   <p class="factor">Factor: where the network reaches</p>
   <h2>Where people board</h2>
-  <p>The busiest stations in both big cities are in the centre. Sydney's busiest station, Central, handles <strong class="hl">about a third more entries</strong> than Melbourne's, Flinders Street. The second pair of maps shows every stop in Melbourne and South East Queensland, coloured by mode, so you can see how far each network reaches. Blue lines show train tracks and faint grey lines show postcodes, as the legends explain. The bar chart below shows which Melbourne train lines carry the most people. Busier stations are larger and a deeper yellow, and quiet stations fade into the background.</p>
-  <div class="grid">
+  <p>The busiest stations in both big cities are in the centre. <span class="note">Note: Yellow is used only for visual clarity: these maps show train stations alone, with no other mode drawn at the same time.</span></p>
+  <div class="pair">
+    <p class="a-t">Sydney's busiest station, Central, handles <strong class="hl">about a third more entries</strong> than Melbourne's, Flinders Street.</p>
+    <p class="b-t">Busier stations are larger and a deeper yellow, and quiet stations fade into the background.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 15</div><div class="chart" id="c15" role="img" aria-label="Size, colour and opacity all show entries through station gates over the latest 12 months available. Both maps use the same scales."></div><figcaption>Size, colour and opacity all show entries through station gates over the latest 12 months available. Both maps use the same scales. <span class="src">Source: Transport for NSW Open Data</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 16</div><div class="chart" id="c16" role="img" aria-label="Entries to Melbourne train stations in 2024-25. Flinders Street and Southern Cross lead."></div><figcaption>Entries to Melbourne train stations in 2024-25. Flinders Street and Southern Cross lead. <span class="src">Source: Victoria Department of Transport and Planning</span></figcaption></figure>
+    </div>
   </div>
-  <div class="stack" style="margin-top:20px">
+  <div class="al wide" style="margin-top:24px">
+    <p>The bars show which Melbourne train lines carry the most people.</p>
+  </div>
+  <div class="stack" style="margin-top:0">
     <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 17</div><div class="chart" id="c17" role="img" aria-label="Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together."></div><figcaption>Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together. <span class="src">Source: Victoria Department of Transport and Planning, station entries 2024-25 and boardings by line</span></figcaption></figure>
   </div>
-  <div class="grid" style="margin-top:20px">
+  <div class="pair" style="margin-top:24px">
+    <p class="a-t">These maps show every stop in Melbourne and South East Queensland, coloured by mode, so you can see how far each network reaches.</p>
+    <p class="b-t">Blue lines show train tracks and faint grey lines show postcodes, as the legends explain.</p>
+    <div class="a-f">
     <figure><div class="num">Chart 18</div><div class="chart" id="c18" role="img" aria-label="Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs."></div><figcaption>Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs. <span class="src">Source: Public Transport Victoria stops dataset</span></figcaption></figure>
+    </div>
+    <div class="b-f">
     <figure><div class="num">Chart 19</div><div class="chart" id="c19" role="img" aria-label="South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month."></div><figcaption>South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month. <span class="src">Source: TransLink origin-destination trips (July 2026), SEQ GTFS and Queensland Government rail data</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -326,7 +377,11 @@ function wrapTitles(sp, px){
   }
 }
 // Fetch each spec once, apply the theme, and draw it with vega-embed
+let rendering = false, redo = false;   // a redraw asked for mid-draw is run again afterwards
 async function render(){
+  if (rendering) { redo = true; return; }
+  rendering = true;
+  try {
   // Charts are drawn on canvas, so wait for the web font first; otherwise they would fall back to a system font
   try { await Promise.all([document.fonts.load('400 12px "Public Sans"'), document.fonts.load('600 12px "Public Sans"'), document.fonts.load('700 13px "Public Sans"')]); } catch (e) {}
   for (const [i, name] of CHARTS) {
@@ -365,6 +420,7 @@ async function render(){
       console.error(name, e);
     }
   }
+  } finally { rendering = false; if (redo) { redo = false; render(); } }
 }
 render();
 // Redraw when the theme changes
@@ -372,6 +428,9 @@ let t;
 function again(){ clearTimeout(t); t = setTimeout(render, 150); }
 if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', again);
 new MutationObserver(again).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+// Redraw when the page width changes (window resized, side panel opened), because charts 8, 14 and the maps are sized from their card
+let lastW = document.documentElement.clientWidth;
+if (window.ResizeObserver) new ResizeObserver(() => { const w = document.documentElement.clientWidth; if (Math.abs(w - lastW) > 24) { lastW = w; again(); } }).observe(document.body);
 </script>
 </body>
 </html>
