@@ -84,7 +84,7 @@ code{font-size:.9em}
   <p class="kicker">Public transport usage · eight Australian capital cities</p>
   <h1>Buses, trains, trams and ferries: who came back?</h1>
   <p class="lede">Before COVID-19, Australians made about 1.8 billion trips a year on city public transport. Today the total is still a tenth short. The gap is not shared equally: some cities are busier than before COVID-19, and others have lost a fifth of their riders. The charts also look at what shapes demand: population, COVID-19, the time of day and where the network reaches.</p>
-  <p class="byline">By Hilman Wiraatmaja (34141685) · FIT3179 Data Visualisation 2, Monash University · Last updated 15 October 2026</p>
+  <p class="byline">By Hilman Wiraatmaja (34141685) · FIT3179 Data Visualisation 2, Monash University · Last updated 24 October 2026</p>
   <div class="facts">
     <div class="fact"><b>90%</b><span>of 2018-19 trips made in 2024-25, all eight capitals combined</span></div>
     <div class="fact"><b>105%</b><span>Perth, the strongest recovery of any capital</span></div>
@@ -219,20 +219,24 @@ code{font-size:.9em}
     <figure><div class="num">Chart 16</div><div class="chart" id="c16" role="img" aria-label="Entries to Melbourne train stations in 2024-25. Flinders Street and Southern Cross lead."></div><figcaption>Entries to Melbourne train stations in 2024-25. Flinders Street and Southern Cross lead. <span class="src">Source: Victoria Department of Transport and Planning</span></figcaption></figure>
     </div>
   </div>
-  <div class="al wide" style="margin-top:24px">
-    <p>The bars show which Melbourne train lines carry the most people.</p>
-  </div>
-  <div class="stack" style="margin-top:0">
-    <figure style="max-width:780px;width:100%;margin-inline:auto"><div class="num">Chart 17</div><div class="chart" id="c17" role="img" aria-label="Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together."></div><figcaption>Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together. <span class="src">Source: Victoria Department of Transport and Planning, station entries 2024-25 and boardings by line</span></figcaption></figure>
+  <div class="pair" style="margin-top:24px">
+    <p class="a-t">The bars show which Melbourne train lines carry the most people.</p>
+    <p class="b-t">The map shows where those passengers are: <strong class="hl">lines thicken towards the city as branches join</strong>, and the Pakenham and Cranbourne lines meet at Dandenong and carry their combined load on to Richmond. <span class="note">Note: the widths are an estimate. Each station's yearly entries are added up along its branch on the way to the city, so trips between two outer stations are not counted.</span></p>
+    <div class="a-f">
+    <figure><div class="num">Chart 17</div><div class="chart" id="c17" role="img" aria-label="Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together."></div><figcaption>Each station's entries are split across the lines that serve it, in proportion to the Department's boardings by line. Dark bars are stations only that line serves. Pale bars are shared stations, so they depend on that split and are an estimate. The Pakenham, Frankston and Lilydale lines carry the most. Lines are grouped by corridor, so related lines such as Pakenham and Cranbourne sit together. <span class="src">Source: Victoria Department of Transport and Planning, station entries 2024-25 and boardings by line</span></figcaption></figure>
+    </div>
+    <div class="b-f">
+    <figure><div class="num">Chart 18</div><div class="chart" id="c18" role="img" aria-label="Each segment between two stations is a line whose width is the estimated number of passengers travelling towards the city in 2024-25. Widths are built by adding the entries of every station further out on that branch, so they grow at junctions such as Dandenong (Pakenham and Cranbourne), Caulfield (Frankston joins) and Richmond. The map shows lines as straight links between stations and covers the metropolitan network up to Frankston."></div><figcaption>Each segment between two stations is a line whose width is the estimated number of passengers travelling towards the city in 2024-25. Widths are built by adding the entries of every station further out on that branch, so they grow at junctions such as Dandenong (Pakenham and Cranbourne), Caulfield (Frankston joins) and Richmond. The map shows lines as straight links between stations and covers the metropolitan network up to Frankston. <span class="src">Source: Victoria Department of Transport and Planning, station entries 2024-25; branch order from the Victorian train network map (September 2026)</span></figcaption></figure>
+    </div>
   </div>
   <div class="pair" style="margin-top:24px">
     <p class="a-t">These maps show every stop in Melbourne and South East Queensland, coloured by mode, so you can see how far each network reaches.</p>
     <p class="b-t">Blue lines show train tracks and faint grey lines show postcodes, as the legends explain.</p>
     <div class="a-f">
-    <figure><div class="num">Chart 18</div><div class="chart" id="c18" role="img" aria-label="Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs."></div><figcaption>Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs. <span class="src">Source: Public Transport Victoria stops dataset</span></figcaption></figure>
+    <figure><div class="num">Chart 19</div><div class="chart" id="c19" role="img" aria-label="Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs."></div><figcaption>Melbourne has the only large tram network. Trains and trams cover the inner city, while buses fill the outer suburbs. <span class="src">Source: Public Transport Victoria stops dataset</span></figcaption></figure>
     </div>
     <div class="b-f">
-    <figure><div class="num">Chart 19</div><div class="chart" id="c19" role="img" aria-label="South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month."></div><figcaption>South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month. <span class="src">Source: TransLink origin-destination trips (July 2026), SEQ GTFS and Queensland Government rail data</span></figcaption></figure>
+    <figure><div class="num">Chart 20</div><div class="chart" id="c20" role="img" aria-label="South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month."></div><figcaption>South East Queensland stops coloured by mode and made more solid the busier they are (July 2026 boardings), with train lines in blue. The busiest 100 of about 11,700 stops carry half of all boardings, and nearly nine in ten stops have fewer than 1,000 a month. <span class="src">Source: TransLink origin-destination trips (July 2026), SEQ GTFS and Queensland Government rail data</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -304,6 +308,7 @@ code{font-size:.9em}
     <li><a href="https://opendata.transport.vic.gov.au/dataset/gtfs-schedule">GTFS Schedule</a></li>
     <li><a href="https://opendata.transport.vic.gov.au/dataset/monthly-average-patronage-by-day-type-and-by-mode">Monthly average patronage by day type and by mode</a></li>
     <li><a href="https://opendata.transport.vic.gov.au/dataset/monthly-public-transport-patronage-by-mode">Monthly public transport patronage by mode</a></li>
+    <li>Transport Victoria, <i>Victorian train network</i> map (September 2026): the order of stations along each line, used for chart 18</li>
   </ul>
   <h3>Western Australia</h3>
   <ul>
@@ -323,7 +328,7 @@ code{font-size:.9em}
 const CHARTS = [[1,'01_national_trips'],[5,'05_city_recovery_multiples'],
  [4,'04_change_by_mode'],[2,'02_trips_per_person'],[7,'07_pt_share_dumbbell'],
  [6,'06_trips_per_person_trend'],[8,'08_monthly_sydney_melbourne'],[9,'09_adelaide_daily'],
- [15,'15_sydney_stations'],[16,'16_melbourne_stations'],[18,'18_melbourne_stops'],[19,'19_brisbane_stops'],[3,'03_national_map'],[17,'17_melbourne_lines'],[11,'11_canberra_hourly'],
+ [15,'15_sydney_stations'],[16,'16_melbourne_stations'],[19,'19_melbourne_stops'],[20,'20_brisbane_stops'],[18,'18_melbourne_flow'],[3,'03_national_map'],[17,'17_melbourne_lines'],[11,'11_canberra_hourly'],
  [10,'10_train_hours_by_day'],[14,'14_train_line_hour_heatmap'],[12,'12_train_tidal_flow'],[13,'13_train_line_peaks']];
 const BASE = (document.currentScript && document.currentScript.dataset.base) || '';
 const specCache = {};
