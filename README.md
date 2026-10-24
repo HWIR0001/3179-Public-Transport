@@ -9,7 +9,7 @@ A single-page Vega-Lite dashboard comparing public transport in Australia's eigh
 - `index.html`: the page (text, layout, and the script that loads each chart).
 - `specs/`: one readable Vega-Lite JSON spec per chart (each has a one-line `description`).
 - `data/`: reduced CSV and GeoJSON files the charts read (about 1.7 MB in total).
-- `scripts/`: Python used to reduce the raw data and generate the specs and page. Not needed to run the site.
+- `scripts/`: Python used to reduce the raw data and generate the specs and page. Not needed to run the site. (legacy, many modifications were performed afterwards, kept as a trace)
 
 ## How to read the code (start here)
 1. `index.html`: open it in a text editor. The CSS is at the top (comments explain the layout), then the page text, then a short script at the bottom. The script has one list, `CHARTS`, that pairs each chart box with a spec file, then `fetch`es the spec and draws it with vega-embed. `themed()` only recolours a copy of the spec for dark mode.
